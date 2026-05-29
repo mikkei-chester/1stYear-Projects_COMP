@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us – DayBreak Corner</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="/img/logo/logo-img.png" type="image/x-icon">
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <!-- Site styles -->
+  <link rel="stylesheet" href="style.css" />
+  <!-- AOS Animation -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+    
+</head>
+
+<body>
+
+  <!-- SCRIPTS -->
+  <script src="script.js"></script>
+  <!-- Bootstrap JS (offcanvas + accordion only) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- AOS Animation -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+<!-- NAVBAR -->
+<header class="db-nav sticky-top" id="mainNav">
+  <div class="container-fluid px-4">
+    <div class="d-flex align-items-center justify-content-between">
+
+      <a href="home.html" class="db-brand d-flex align-items-center gap-2 text-decoration-none">
+        <img src="/img/logo/logo-img.png" alt="DayBreak Corner" width="44" height="44" class="db-brand-img" />
+        <span>DayBreak <em>Corner</em></span>
+      </a>
+
+      <!-- Desktop nav links -->
+      <nav class="db-navlinks d-none d-md-flex d-flex align-items-center gap-1">
+        <a href="home.html">Home</a>
+        <a href="product.html">Menu</a>
+        <a href="about.html" class="active">About</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="d-none d-md-flex align-items-center gap-3">
+        <a href="product.html" class="db-btn-primary d-inline-flex align-items-center gap-1 text-decoration-none">Order Now</a>
+      </div>
+
+      <button class="db-hamburger d-md-none" type="button"
+        data-bs-toggle="offcanvas" data-bs-target="#mobileMenu" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- MOBILE OFFCANVAS -->
+<div class="offcanvas offcanvas-end db-offcanvas" tabindex="-1" id="mobileMenu">
+  <div class="offcanvas-header">
+    <span class="db-brand d-flex align-items-center gap-2 text-decoration-none" style="font-size:1.1rem;">DayBreak <em>Corner</em></span>
+    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body d-flex flex-column">
+    <nav class="db-offcanvas-links flex-grow-1 d-flex flex-column">
+      <a href="home.html">Home</a>
+      <a href="product.html">Menu</a>
+      <a href="about.html" class="active">About</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <a href="product.html" class="db-btn-primary text-center mt-3 d-inline-flex align-items-center gap-1 text-decoration-none">Order Now</a>
+  </div>
+</div>
+
+<!-- HERO -->
+<section class="about-hero">
+  <div class="container">
+    <div class="row align-items-center gy-5">
+      <div class="col-12 col-lg-6">
+        <nav aria-label="breadcrumb" class="mb-3">
+          <ol class="breadcrumb sip-breadcrumb mb-0" data-aos="fade-up" data-aos-duration="850">
+            <li class="breadcrumb-item"><a href="home.html">Home</a></li>
+            <li class="breadcrumb-item active">About Us</li>
+          </ol>
+        </nav>
+        <p class="hero-eyebrow" data-aos="fade-up" data-aos-duration="1000">Our Story</p>
+        <h1 class="hero-headline" data-aos="fade-up" data-aos-duration="1500">Born from a Love<br>of <em>Good Coffee</em></h1>
+        <p class="hero-sub" data-aos="fade-up" data-aos-duration="1800">DayBreak Corner started as a small dream — a cozy corner where every morning felt like a fresh start. Today, it's where your city comes to sip, slow down, and feel at home.</p>
+        <div class="d-flex flex-wrap gap-3 mt-4" data-aos="fade-up" data-aos-duration="2000">
+          <a href="product.html" class="db-btn-primary d-inline-flex align-items-center gap-1 text-decoration-none">See Our Menu</a>
+          <a href="contact.html" class="db-btn-ghost-light d-inline-flex align-items-center gap-1 text-decoration-none">Visit Us</a>
+        </div>
+      </div>
+      <div class="col-12 col-lg-6 d-none d-lg-flex justify-content-center">
+        <div class="about-hero-img-wrap d-flex justify-content-center align-items-center" data-aos="fade-up" data-aos-duration="2000">
+          <img src="/img/logo/hero_shadow.png" alt="DayBreak Corner interior" class="about-hero-img p-2" />
+          <div class="about-hero-badge d-flex flex-column align-items-center justify-content-center">
+            <span class="badge-year">Est.</span>
+            <span class="badge-num">2019</span>
+            <span class="badge-sub">With love</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="hero-wave">
+    <svg viewBox="0 0 1440 80" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+      <path d="M0 40 C360 80 1080 0 1440 40 L1440 80 L0 80 Z" fill="#fdf8f3"/>
+    </svg>
+  </div>
+</section>
+
+<!-- QUICK STATS BAR -->
+<div class="about-stats-bar">
+  <div class="container">
+    <div class="row row-cols-2 row-cols-md-4 g-0">
+      <div class="col">
+        <div class="astat-item d-flex flex-column align-items-center justify-content-center" >
+          <span class="astat-num" data-aos="fade-right" data-aos-duration="1000">5+</span>
+          <span class="astat-label" data-aos="fade-right" data-aos-duration="1000">Years Serving</span>
+        </div>
+      </div>
+      <div class="col">
+        <div class="astat-item d-flex flex-column align-items-center justify-content-center astat-item-accent">
+          <span class="astat-num" data-aos="fade-right" data-aos-duration="1000">20+</span>
+          <span class="astat-label" data-aos="fade-right" data-aos-duration="1000">Menu Items</span>
+        </div>
+      </div>
+      <div class="col">
+        <div class="astat-item d-flex flex-column align-items-center justify-content-center">
+          <span class="astat-num" data-aos="fade-right" data-aos-duration="1000">500+</span>
+          <span class="astat-label" data-aos="fade-right" data-aos-duration="1000">Happy Customers</span>
+        </div>
+      </div>
+      <div class="col">
+        <div class="astat-item astat-item-accent d-flex flex-column align-items-center justify-content-center">
+          <span class="astat-num" data-aos="fade-right" data-aos-duration="1000">4.9★</span>
+          <span class="astat-label" data-aos="fade-right" data-aos-duration="1000">Avg. Rating</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- OUR STORY -->
+<section class="about-story">
+  <div class="container">
+    <div class="row align-items-center gy-0">
+      <div class="col-12 col-md-6">
+        <div class="story-img-grid">
+          <div class="story-img-main overflow-hidden d-none d-lg-flex flex-column" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="100">
+            <img src="/img/logo/heropic(2).png" alt="Our shop" />
+          </div>
+          <div class="story-img-side d-none d-lg-flex flex-column gap-1" data-aos="zoom-in" data-aos-duration="1000">
+            <img src="/img/logo/Matcha Latte 2.png" alt="Our drinks" />
+            <div class="story-img-quote d-flex align-items-center justify-content-center" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="50">
+              <span>"Every cup tells a story."</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-6 col-md-12 ps-md-5">
+        <span class="section-eyebrow d-block text-uppercase fw-bold mb-2" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">How It All Started</span>
+        <h2 class="section-title" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">From a Tiny Stall<br>to <em>Your Favorite Corner</em></h2>
+        <p class="section-body mb-3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">It began in 2019 with a single push-cart, two recipes, and a stubborn belief that people deserved better than generic bubble tea. Our founder, Mike, would wake up before sunrise every day to cook pearls by hand — not because he had to, but because he knew the difference a little extra care makes in every sip.</p>
+        <p class="section-body mb-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">Word spread quickly. The line grew longer. The push-cart became a kiosk. The kiosk became DayBreak Corner — a full café that still runs on those same two founding rules: use only real ingredients, and never rush a good cup.</p>
+        <div class="story-highlight-box" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100">
+          <i class="bi bi-quote" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200"></i>
+          <p data-aos="fade-right" data-aos-duration="1000" data-aos-delay="300">"Lijinds lang nakakaalam ;)"</p>
+          <span data-aos="fade-right" data-aos-duration="1000" data-aos-delay="400">— Mike, Founder</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TIMELINE -->
+<section class="about-timeline">
+  <div class="container">
+    <div class="text-center mb-5">
+      <span class="section-eyebrow d-block text-uppercase fw-bold mb-2" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="00">Our Journey</span>
+      <h2 class="section-title" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="50">Five Years, One <em>Big Dream</em></h2>
+    </div>
+
+    <div class="timeline">
+
+      <div class="timeline-item" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="00">
+        <div class="timeline-dot"></div>
+        <div class="timeline-year">2019</div>
+        <div class="timeline-card">
+          <h6 class="timeline-title">The Push-Cart Begins</h6>
+          <p class="timeline-body">Mike sets up his first push-cart outside a local school with three signature drinks and a hand-painted sign that read "DayBreak Corner." Sells out in 2 hours.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item timeline-item-right" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="00">
+        <div class="timeline-dot"></div>
+        <div class="timeline-year">2020</div>
+        <div class="timeline-card">
+          <h6 class="timeline-title">First Kiosk Opens</h6>
+          <p class="timeline-body">After months of early-morning pearl-cooking and loyal regulars, DayBreak Corner earns its first permanent spot inside the local market. The menu grows to 15 drinks.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="00">
+        <div class="timeline-dot"></div>
+        <div class="timeline-year">2021</div>
+        <div class="timeline-card">
+          <h6 class="timeline-title">Going Viral — Locally</h6>
+          <p class="timeline-body">A food blogger's video of the Hershey's Boba earns 50,000 views overnight. The queue wraps around the block for two weeks straight. Mike hires his first team of three.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item timeline-item-right" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="00">
+        <div class="timeline-dot"></div>
+        <div class="timeline-year">2022</div>
+        <div class="timeline-card">
+          <h6 class="timeline-title">The Full Café Opens</h6>
+          <p class="timeline-body">DayBreak Corner moves into its first dedicated café space — warm lighting, wooden tables, and that signature smell of slow-cooked brown sugar. Coffee and food are added to the menu.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="00">
+        <div class="timeline-dot"></div>
+        <div class="timeline-year">2026</div>
+        <div class="timeline-card timeline-card-accent">
+          <h6 class="timeline-title">Online Ordering Launches 🎉</h6>
+          <p class="timeline-body">DayBreak Corner goes digital — order ahead, customize your drink, and skip the wait. 500+ happy customers and counting. The dream just keeps growing.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- VALUES -->
+<section class="about-values">
+  <div class="container">
+    <div class="text-center mb-5">
+      <span class="section-eyebrow d-block text-uppercase fw-bold mb-2" data-aos="fade-up" data-aos-duration="800" data-aos-delay="00">What Drives Us</span>
+      <h2 class="section-title" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">Our Core <em data-aos="fade-up" data-aos-duration="800" data-aos-delay="150">Values</em></h2>
+      <p class="section-body mx-auto" style="max-width:500px;" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">Everything we do traces back to three simple beliefs that have guided DayBreak Corner from day one.</p>
+    </div>
+    <div class="row row-cols-2 d-flex justify-content-center row-cols-sm-2 row-cols-md-3 g-4">
+
+      <div class="col">
+        <div class="value-card" data-aos="flip-right" data-aos-duration="800" data-aos-delay="00">
+          <div class="value-number">01</div>
+          <div class="value-icon dd-block">🌿</div>
+          <h5 class="value-title">Honest Ingredients</h5>
+          <p class="value-body">We use real tea leaves, fresh fruit, and hand-cooked pearls. No artificial syrups, no shortcuts — ever. You taste the difference in every sip.</p>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="value-card value-card-accent" data-aos="flip-right" data-aos-duration="800" data-aos-delay="100">
+          <div class="value-number">02</div>
+          <div class="value-icon d-block">🤝</div>
+          <h5 class="value-title">Community First</h5>
+          <p class="value-body">DayBreak Corner was built by this neighborhood and for it. We partner with local suppliers, hire locally, and give back to the community that made us.</p>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="value-card" data-aos="flip-right" data-aos-duration="800" data-aos-delay="200">
+          <div class="value-number">03</div>
+          <div class="value-icon d-block">✨</div>
+          <h5 class="value-title">Joy in Every Cup</h5>
+          <p class="value-body">We believe a great drink can turn a rough morning around. That's not just a slogan — it's the reason Mike still shows up at 6 AM every single day.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- MEET THE TEAM -->
+<section class="about-team">
+  <div class="container">
+    <div class="text-center mb-5">
+      <span class="section-eyebrow d-block text-uppercase fw-bold mb-2" data-aos="fade-up" data-aos-duration="800" data-aos-delay="00">The People Behind Your Cup</span>
+      <h2 class="section-title" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">Meet the <em data-aos="fade-up" data-aos-duration="800" data-aos-delay="150">Team</em></h2>
+      <p class="section-body mx-auto" style="max-width:500px;" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">Small but mighty — a crew of caffeine-lovers, flavor-chasers, and early risers who make DayBreak Corner run.</p>
+    </div>
+    <div class="row row-cols-2 row-cols-sm-2 row-cols-lg-4 g-4 justify-content-center">
+
+      <div class="col">
+        <div class="team-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="00">
+          <div class="team-avatar-wrap">
+            <div class="team-avatar"><img src="/img/logo/Mike.jpg" alt="Mike" class="team-avatar-img"></div>
+            <div class="team-socials">
+              <a href="#"><i class="bi bi-instagram"></i></a>
+            </div>
+          </div>
+          <h6 class="team-name">Mike Dumail</h6>
+          <span class="team-role d-block">Founder & Head Brewer</span>
+          <p class="team-bio">The original pearl-cooker. He knows every drink on the menu by heart and will still make your order himself on a slow day.</p>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="team-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+          <div class="team-avatar-wrap">
+            <div class="team-avatar"><img src="/img/logo/jeric.png" alt="Shan" class="team-avatar-img"></div>
+            <div class="team-socials">
+              <a href="#"><i class="bi bi-instagram"></i></a>
+            </div>
+          </div>
+          <h6 class="team-name">Jeric Semillano</h6>
+          <span class="team-role d-block">Head Barista</span>
+          <p class="team-bio">Coffee is his love language. Jeric designed our house blend and keeps the espresso machine humming from open to close.</p>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="team-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+          <div class="team-avatar-wrap">
+            <div class="team-avatar"><img src="/img/logo/shan.png" alt="Shan" class="team-avatar-img"></div>
+            <div class="team-socials">
+              <a href="#"><i class="bi bi-instagram"></i></a>
+            </div>
+          </div>
+          <h6 class="team-name">Shaniah Painaga</h6>
+          <span class="team-role d-block">Menu & Flavor Dev</span>
+          <p class="team-bio">If there's a new seasonal drink, Shaniah dreamed it up. She spends her weekends testing recipes and her weekdays making them perfect.</p>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="team-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300"  >
+          <div class="team-avatar-wrap">
+            <div class="team-avatar"><img src="/img/logo/zhea.jpg" alt="Zhea" class="team-avatar-img"></div>
+            <div class="team-socials">
+              <a href="#"><i class="bi bi-instagram"></i></a>
+            </div>
+          </div>
+          <h6 class="team-name">Zhea Confesor</h6>
+          <span class="team-role d-block">Operations & Service</span>
+          <p class="team-bio">The one who makes sure every order is right, every table is clean, and every customer leaves with a smile. The glue of the team.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CTA BANNER -->
+<section class="db-cta">
+  <div class="container text-center">
+    <h2 class="cta-title" data-aos="fade-up" data-aos-duration="800" data-aos-delay="00">Come Say Hi at<br><em data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">DayBreak Corner</em></h2>
+    <p class="cta-sub" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">Whether you're a first-timer or a familiar face, there's always a cup waiting for you.</p>
+    <div class="d-flex flex-wrap justify-content-center gap-3 mt-4">
+      <a href="product.html" class="db-btn-primary d-inline-flex align-items-center gap-1 text-decoration-none" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">Order Online</a>
+      <a href="contact.html#map" class="db-btn-ghost-light d-inline-flex align-items-center gap-1 text-decoration-none" data-aos="fade-up" data-aos-duration="800" data-aos-delay="350">Find Us</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="db-footer">
+  <div class="container">
+    <div class="row g-5">
+      <div class="col-12 col-md-4">
+        <div class="footer-brand">DayBreak <em>Corner</em></div>
+        <p class="footer-tagline mt-2">Beyond the Bean — your daily dose of happiness, one cup at a time.</p>
+        <div class="footer-socials d-flex gap-2 mt-3">
+          <a href="https://www.facebook.com/profile.php?id=61559224423326&sk=about"><i class="bi bi-facebook"></i></a>
+          <a href="#"><i class="bi bi-instagram"></i></a>
+          <a href="#"><i class="bi bi-tiktok"></i></a>
+        </div>
+      </div>
+      <div class="col-6 col-md-2">
+        <h6 class="footer-heading">Navigate</h6>
+        <ul class="footer-links p-0 m-0 d-flex flex-column gap-2 list-unstyled text-decoration-none">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="product.html">Menu</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md-2">
+        <h6 class="footer-heading">Help</h6>
+        <ul class="footer-links p-0 m-0 d-flex flex-column gap-2 list-unstyled">
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="faq.html#faqDelivery">Delivery</a></li>
+            <li><a href="faq.html#faqReturns">Returns</a></li>
+            <li><a href="faq.html#faqOrders">Track Order</a></li>
+        </ul>
+      </div>
+      <div class="col-12 col-md-4">
+        <h6 class="footer-heading">Stay Updated</h6>
+        <p class="footer-tagline mb-3">New flavors and promos, straight to you.</p>
+        <div class="footer-newsletter d-flex">
+          <input type="email" placeholder="your@email.com" />
+          <button>Subscribe</button>
+        </div>
+        <div class="footer-hours d-flex align-items-center gap-1 mt-3">
+          <i class="bi bi-clock me-1"></i>
+          <span>Sun - Sat: 9:00 AM – 3:00 AM</span>
+        </div>
+      </div>
+    </div>
+    <hr class="footer-divider" />
+    <div class="footer-bottom d-flex justify-content-between align-items-center flex-wrap gap-3">
+      <small>© 2026 DayBreak Corner. All rights reserved.</small>
+      <div class="d-flex gap-3"><a href="#">Privacy</a><a href="#">Terms</a></div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

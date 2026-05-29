@@ -1,0 +1,1712 @@
+<!DOCTYPE html>
+<html lang="en" class="productHTML">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menu – DayBreak Corner</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="/img/logo/logo-img.png" type="image/x-icon">
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <!-- Site styles -->
+  <link rel="stylesheet" href="style.css" />
+  <!-- AOS Animation -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+
+</head>
+
+<body>
+
+  <!-- SCRIPTS -->
+  <script src="script.js"></script>
+  <!-- Bootstrap JS (offcanvas + accordion only) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- AOS Animation -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+
+<!-- MOBILE OFFCANVAS -->
+<div class="offcanvas offcanvas-end db-offcanvas" tabindex="-1" id="mobileMenu">
+  <div class="offcanvas-header">
+    <span class="db-brand d-flex align-items-center gap-2 text-decoration-none" style="font-size:1.1rem;">DayBreak <em>Corner</em></span>
+    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body d-flex flex-column">
+    <nav class="db-offcanvas-links flex-grow-1 d-flex flex-column">
+      <a href="home.html">Home</a>
+      <a href="product.html" class="active">Menu</a>
+      <a href="about.html">About</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <a href="product.html" class="db-btn-primary d-inline-flex align-items-center gap-1 text-decoration-none mt-3 w-100"
+       style="border-radius:10px;justify-content:center;">
+      <i class="bi bi-bag me-2"></i>View Order (0)
+    </a>
+  </div>
+</div>
+
+<!-- NAVBAR -->
+<header class="db-nav sticky-top" id="mainNav">
+  <div class="container-fluid px-4">
+    <div class="d-flex align-items-center justify-content-between">
+      <a href="home.html" class="db-brand d-flex align-items-center gap-2 text-decoration-none">
+        <img src="/img/logo/logo-img.png" alt="DayBreak Corner" width="44" height="44" class="db-brand-img" />
+        <span>DayBreak <em>Corner</em></span>
+      </a>
+      <nav class="db-navlinks d-none d-md-flex align-items-center gap-1">
+        <a href="home.html">Home</a>
+        <a href="product.html" class="active">Menu</a>
+        <a href="about.html">About</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="d-none d-md-flex align-items-center gap-3">
+        <a href="product.html" class="db-btn-primary d-inline-flex align-items-center gap-1 text-decoration-none">Order Now</a>
+      </div>
+      <button class="db-hamburger d-md-none" type="button"
+        data-bs-toggle="offcanvas" data-bs-target="#mobileMenu" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="prod-hero">
+  <div class="container">
+    <div class="row align-items-center gy-4">
+      <div class="col-12 col-lg-7">
+        <nav aria-label="breadcrumb" class="mb-3">
+          <ol class="breadcrumb sip-breadcrumb mb-0 ">
+            <li class="breadcrumb-item" data-aos="fade-up" data-aos-duration="1000"><a href="home.html">Home</a></li>
+            <li class="breadcrumb-item active" style="color:rgba(255,255,255,.4);font-size:.8rem;" data-aos="fade-up" data-aos-duration="1000">Menu</li>
+          </ol>
+        </nav>
+        <p class="hero-eyebrow" data-aos="fade-up" data-aos-duration="1500">Crafted to Order ✦</p>
+        <h1 class="hero-headline" data-aos="fade-up" data-aos-duration="1800">The DayBreak <em>Menu</em></h1>
+        <p class="hero-sub" data-aos="fade-up" data-aos-duration="2000">Milk tea, coffee, fruit soda, and bites — every item made fresh when you order. Pick your drink, customize your cup, and let us do the rest.</p>
+        <div class="prod-hero-stats mt-4 d-flex align-items-center gap-4">
+          <div class="prod-hero-stat d-flex flex-column" data-aos="fade-up" data-aos-duration="2000"><span>20+</span><small>Items</small></div>
+          <div class="prod-hero-stat-div" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="100"></div>
+          <div class="prod-hero-stat d-flex flex-column" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="200"><span>5</span><small>Categories</small></div>
+          <div class="prod-hero-stat-div" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="300"></div>
+          <div class="prod-hero-stat d-flex flex-column" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="400"><span>Fresh</span><small>Made-to-order</small></div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-5 d-none d-lg-flex justify-content-end">
+        <div class="prod-hero-chips d-flex flex-column align-items-end gap-2">
+          <span data-aos="fade-left" data-aos-duration="1000" data-aos-delay="50">🧋 Milk Tea</span>
+          <span data-aos="fade-left" data-aos-duration="1000" data-aos-delay="150">☕ Coffee</span>
+          <span data-aos="fade-left" data-aos-duration="1000" data-aos-delay="250">🍵 Non-Coffee</span>
+          <span data-aos="fade-left" data-aos-duration="1000" data-aos-delay="450">🍹 Fruit Soda</span>
+          <span data-aos="fade-left" data-aos-duration="1000" data-aos-delay="350">🥐 Food</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="hero-wave">
+    <svg viewBox="0 0 1440 60" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+      <path d="M0 30 C360 60 1080 0 1440 30 L1440 60 L0 60 Z" fill="#fdf8f3"/>
+    </svg>
+  </div>
+</section>
+
+<!-- FILTER BAR – Desktop -->
+<div class="prod-filter-bar d-none d-md-block">
+  <div class="container d-flex align-items-center justify-content-between gap-3 flex-wrap">
+    <div class="d-flex gap-2 flex-wrap">
+      <a href="#all"      class="prod-pill active" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="600">All Items</a>
+      <a href="#milktea"  class="prod-pill" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="500">🧋 Milk Tea</a>
+      <a href="#coffee"   class="prod-pill" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="400">☕ Coffee</a>
+      <a href="#noncoffee"   class="prod-pill" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="400">🍵 Non-Coffee</a>
+      <a href="#fruitsoda" class="prod-pill" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="300">🍹 Fruit Soda</a>
+      <a href="#food"     class="prod-pill" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">🥐 Food</a>
+    </div>
+    <div class="d-flex align-items-center gap-3">
+      <span class="prod-result-count" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="100"><strong>30</strong> items found</span>
+      <select class="prod-select" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+        <option>Featured</option>
+        <option>Price: Low → High</option>
+        <option>Price: High → Low</option>
+        <option>Best Rated</option>
+        <option>A → Z</option>
+      </select>
+    </div>
+  </div>
+</div>
+
+<!-- FILTER BAR – Mobile -->
+<div class="d-md-none prod-mobile-filter">
+  <div class="accordion accordion-flush">
+    <div class="accordion-item border-0">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed prod-filter-toggle" type="button"
+          data-bs-toggle="collapse" data-bs-target="#mobileFilters">
+          <i class="bi bi-funnel-fill me-2"></i>Filter &amp; Sort
+        </button>
+      </h2>
+      <div id="mobileFilters" class="accordion-collapse collapse">
+        <div class="accordion-body pt-0 pb-3">
+          <p class="prod-option-label mb-2 mt-2">Category</p>
+          <div class="d-flex flex-wrap gap-2 mb-4">
+            <a href="#all"      class="prod-pill active">All Items</a>
+            <a href="#milktea"  class="prod-pill">🧋 Milk Tea</a>
+            <a href="#coffee"   class="prod-pill">☕ Coffee</a>
+            <a href="#noncoffee"   class="prod-pill">🍵 Non-Coffee</a>
+            <a href="#fruitsoda" class="prod-pill"> 🍹 Fruit Soda</a>
+            <a href="#food"     class="prod-pill">🍔 Food</a>
+          </div>
+          <p class="prod-option-label mb-2">Sort By</p>
+          <select class="prod-select w-100">
+            <option>Featured</option>
+            <option>Price: Low → High</option>
+            <option>Price: High → Low</option>
+            <option>Best Rated</option>
+            <option>A → Z</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- PRODUCTS GRID -->
+<section class="prod-section" id="all">
+  <div class="container-xl">
+
+    <!-- MILK TEA -->
+    <div id="milktea" class="mb-5">
+      <h2 class="cat-heading" data-aos="fade-right" data-aos-duration="2000" data-aos-delay="00"><span>🧋</span> Milk Tea</h2>
+      <div class="row row-cols-2 row-cols-sm-2 row-cols-lg-3 row-cols-xl-4 g-4">
+        <!-- Card 1 -->
+        <div class="col" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="00">
+          <div class="prod-card">
+            <div class="prod-card-img">
+              <div class="prod-card-thumb" style="background:linear-gradient(135deg,#c8a97e 0%,#6b3e26 100%);">
+                <span class="thumb-emoji"><img src="/img/logo/Hershey_s milk tea.png" alt="Hershey's Boba" height="200"></span>
+                <span class="thumb-label">Hershey's Boba</span>
+              </div>
+              <span class="prod-badge badge-bestseller">BESTSELLER</span>
+              <button class="prod-wish" aria-label="Wishlist"><i class="bi bi-heart-fill"></i></button>
+            </div>
+            <div class="prod-card-body">
+              <span class="prod-card-cat">Milk Tea</span>
+              <p class="prod-card-name">Hershey's Boba</p>
+              <div class="prod-stars">★★★★★ <span class="rev">(312)</span></div>
+              <p class="prod-card-desc">Rich Hershey's chocolate syrup marbled with creamy milk tea. Indulgent cocoa sweetness, smooth texture, luscious dark chocolate hue.</p>
+              <div class="prod-price">₱49</div>
+              <div class="prod-card-footer">
+                <button class="db-btn-primary flex-grow-1" data-bs-toggle="modal" data-bs-target="#modal-1"><i class="bi bi-plus-lg"></i> Add to Order</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="col" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="00">
+          <div class="prod-card">
+            <div class="prod-card-img">
+              <div class="prod-card-thumb" style="background:linear-gradient(135deg,#d9b1b1 0%,#a03f44 100%);">
+                <span class="thumb-emoji"><img src="/img/logo/Red Velvet Milk Tea.png" alt="" height="200"></span>
+                <span class="thumb-label">Red Velvet Milk Tea</span>
+              </div>
+              <span class="prod-badge badge-new">NEW</span>
+              <button class="prod-wish" aria-label="Wishlist"><i class="bi bi-heart-fill"></i></button>
+            </div>
+            <div class="prod-card-body">
+              <span class="prod-card-cat">Milk Tea</span>
+              <p class="prod-card-name">Red Velvet Milk Tea</p>
+              <div class="prod-stars">★★★★★ <span class="rev">(210)</span></div>
+              <p class="prod-card-desc">Decadent red velvet cocoa blended with rich, creamy milk. Indulgent cake-like sweetness, smooth velvety texture, striking crimson-violet hue.</p>
+              <div class="prod-price">₱49</div>
+              <div class="prod-card-footer">
+                <button class="db-btn-primary flex-grow-1" data-bs-toggle="modal" data-bs-target="#modal-2"><i class="bi bi-plus-lg"></i> Add to Order</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="col" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="00">
+          <div class="prod-card">
+            <div class="prod-card-img">
+              <div class="prod-card-thumb" style="background:linear-gradient(135deg,#b7d9a8 0%,#4a7c3f 100%);">
+                <span class="thumb-emoji"><img src="/img/logo/Matcha Milk Tea.png" alt="" height="200"></span>
+                <span class="thumb-label">Matcha Milk Tea</span>
+              </div>
+              <button class="prod-wish" aria-label="Wishlist"><i class="bi bi-heart-fill"></i></button>
+            </div>
+            <div class="prod-card-body">
+              <span class="prod-card-cat">Milk Tea</span>
+              <p class="prod-card-name">Matcha Milk Tea</p>
+              <div class="prod-stars">★★★★<span class="dim">★</span> <span class="rev">(145)</span></div>
+              <p class="prod-card-desc">Premium Japanese green tea whisked with fresh milk. Earthy, vibrant flavor, smooth velvety texture, gorgeous pastel green hue.</p>
+              <div class="prod-price">₱49</div>
+              <div class="prod-card-footer">
+                <button class="db-btn-primary flex-grow-1" data-bs-toggle="modal" data-bs-target="#modal-3"><i class="bi bi-plus-lg"></i> Add to Order</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Card 4 -->
+        <div class="col" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="00">
+          <div class="prod-card">
+            <div class="prod-card-img">
+              <div class="prod-card-thumb" style="background:linear-gradient(135deg,#e6d9c3 0%,#8f825e 100%);">
+                <span class="thumb-emoji"><img src="/img/logo/wintermelon milk tea.png" alt="" height="200"></span>
+                <span class="thumb-label">Wintermelon Milk Tea</span>
+              </div>
+              <span class="prod-badge badge-sale">SALE</span>
+              <button class="prod-wish" aria-label="Wishlist"><i class="bi bi-heart-fill"></i></button>
+            </div>
+            <div class="prod-card-body">
+              <span class="prod-card-cat">Milk Tea</span>
+              <p class="prod-card-name">Wintermelon Milk Tea</p>
+              <div class="prod-stars">★★★★<span class="dim">★</span> <span class="rev">(88)</span></div>
+              <p class="prod-card-desc">Sweet wintermelon syrup blended with creamy milk tea. Refreshing melon notes, lightly caramelized sweetness, comforting classic tan hue.</p>
+              <div class="prod-price">₱39 <span class="prod-price-orig">₱49</span> <span class="prod-price-save">Save 18%</span></div>
+              <div class="prod-card-footer">
+                <button class="db-btn-primary flex-grow-1" data-bs-toggle="modal" data-bs-target="#modal-4"><i class="bi bi-plus-lg"></i> Add to Order</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Card 5 -->
+        <div class="col" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="00">
+          <div class="prod-card">
+            <div class="prod-card-img">
+              <div class="prod-card-thumb" style="background:linear-gradient(135deg,#e3dede 0%,#4a4747 100%);">
+                <span class="thumb-emoji"><img src="/img/logo/Cookies and Cream.png" alt="" height="200"></span>
+                <span class="thumb-label">Cookies and Cream</span>
+              </div>
+              <span class="prod-badge badge-new">NEW</span>
+              <button class="prod-wish" aria-label="Wishlist"><i class="bi bi-heart-fill"></i></button>
+            </div>
+            <div class="prod-card-body">
+              <span class="prod-card-cat">Milk Tea</span>
+              <p class="prod-card-name">Cookies and Cream Boba</p>
+              <div class="prod-stars">★★★★★ <span class="rev">(97)</span></div>
+              <p class="prod-card-desc">Velvety sweet cream milk tea loaded with crushed Oreo cookie bits. Rich vanilla sweetness, satisfying crunchy texture, playful cookies-and-cream mottled hue.</p>
+              <div class="prod-price">₱49</div>
+              <div class="prod-card-footer">
+                <button class="db-btn-primary flex-grow-1" data-bs-toggle="modal" data-bs-target="#modal-5"><i class="bi bi-plus-lg"></i> Add to Order</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Card 6 -->
+        <div class="col" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="00">
+          <div class="prod-card">
+            <div class="prod-card-img">
+              <div class="prod-card-thumb" style="background:linear-gradient(135deg,#d0cdc0 0%,#6b5b26 100%);">
+                <span class="thumb-emoji"><img src="/img/logo/Okinawa.png" alt="" height="200"></span>
+                <span class="thumb-label">Okinawa</span>
+              </div>
+              <span class="prod-badge badge-hot">HOT</span>
+              <button class="prod-wish" aria-label="Wishlist"><i class="bi bi-heart-fill"></i></button>
+            </div>
+            <div class="prod-card-body">
+              <span class="prod-card-cat">Milk Tea</span>
+              <p class="prod-card-name">Okinawa Boba</p>
+              <div class="prod-stars">★★★★★ <span class="rev">(178)</span></div>
+              <p class="prod-card-desc">Roasted Okinawa brown sugar blended with classic black milk tea. Deep molasses sweetness, robust full-bodied texture, beautiful rich golden-brown hue.</p>
+              <div class="prod-price">₱49</div>
+              <div class="prod-card-footer">
+                <button class="db-btn-primary flex-grow-1" data-bs-toggle="modal" data-bs-target="#modal-6"><i class="bi bi-plus-lg"></i> Add to Order</button>
+              </div>
+            </div>
+          </div>
+        </div>
+         <!-- Card 7 -->
+        <div class="col" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="00">
+          <div class="prod-card">
+            <div class="prod-card-img">
+              <div class="prod-card-thumb" style="background:linear-gradient(135deg,#928f82 0%,#9d783c 100%);">
+                <span class="thumb-emoji"><img src="/img/logo/Wintermelon Oreo.png" alt="" height="200"></span>
+                <span class="thumb-label">Wintermelon Oreo</span>
+              </div>
+              <span class="prod-badge badge-new">NEW</span>
+              <button class="prod-wish" aria-label="Wishlist"><i class="bi bi-heart-fill"></i></button>
+            </div>
+            <div class="prod-card-body">
+              <span class="prod-card-cat">Milk Tea</span>
+              <p class="prod-card-name">Wintermelon Oreo Boba</p>
+              <div class="prod-stars">★★★★★ <span class="rev">(97)</span></div>
+              <p class="prod-card-desc">Sweet wintermelon tea layered with creamy milk and crushed Oreo cookies. Refreshing melon sweetness, crunchy chocolate texture, beautiful speckled cream hue.</p>
+              <div class="prod-price">₱59</div>
+              <div class="prod-card-footer">
+                <button class="db-btn-primary flex-grow-1" data-bs-toggle="modal" data-bs-target="#modal-7"><i class="bi bi-plus-lg"></i> Add to Order</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- COFFEE -->
+    <div id="coffee" class="mb-5">
+      <h2 class="cat-heading" data-aos="fade-right" data-aos-duration="500" data-aos-delay="00"><span>☕</span> Coffee</h2>
+      <div class="row row-cols-2 row-cols-sm-2 row-cols-lg-3 row-cols-xl-4 g-4">
+        <!-- Card 8 -->
+        <div class="col" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="00">
+          <div class="prod-card">
+            <div class="prod-card-img">
+              <div class="prod-card-thumb" style="background:linear-gradient(135deg,#d4b896 0%,#4a2c1a 100%);">
+                <span class="thumb-emoji"><img src="/img/logo/Mocha Latte.png" alt="" height="200"></span>
+                <span class="thumb-label">Mocha Latte</span>
+              </div>
+              <span class="prod-badge badge-bestseller">BESTSELLER</span>
+              <button class="prod-wish" aria-label="Wishlist"><i class="bi bi-heart-fill"></i></button>
+            </div>
+            <div class="prod-card-body">
+              <span class="prod-card-cat">Coffee</span>
+              <p class="prod-card-name">Mocha Latte</p>
+              <div class="prod-stars">★★★★★ <span class="rev">(204)</span></div>
+              <p class="prod-card-desc">Rich espresso blended with chocolate and milk, topped with whipped cream and drizzle.</p>
+              <div class="prod-price">₱59</div>
+              <div class="prod-card-footer">
+                <button class="db-btn-primary flex-grow-1" data-bs-toggle="modal" data-bs-target="#modal-8"><i class="bi bi-plus-lg"></i> Add to Order</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Card 9 -->
+        <div class="col" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="00">
+          <div class="prod-card">
+            <div class="prod-card-img">
+              <div class="prod-card-thumb" style="background:linear-gradient(135deg,#f5d58a 0%,#c97520 100%);">
+                <span class="thumb-emoji"><img src="/img/logo/Cafe Latte(2).png" alt="" height="200"></span>
+                <span class="thumb-label">Cafe Latte</span>
+              </div>
+              <button class="prod-wish" aria-label="Wishlist"><i class="bi bi-heart-fill"></i></button>
+            </div>
+            <div class="prod-card-body">
+              <span class="prod-card-cat">Coffee</span>
+              <p class="prod-card-name">Cafe Latte</p>
+              <div class="prod-stars">★★★★<span class="dim">★</span> <span class="rev">(133)</span></div>
+              <p class="prod-card-desc">A creamy blend of espresso and steamed milk with a light beige color and a soft frothy top, offering a mellow, balanced taste.</p>
+              <div class="prod-price">₱59</div>
+              <div class="prod-card-footer">
+                <button class="db-btn-primary flex-grow-1" data-bs-toggle="modal" data-bs-target="#modal-9"><i class="bi bi-plus-lg"></i> Add to Order</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Card 10 -->
+        <div class="col" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="00">
+          <div class="prod-card">
+            <div class="prod-card-img">
+              <div class="prod-card-thumb" style="background:linear-gradient(135deg,#f0e0c8 0%,#c8a97e 100%);">
+                <span class="thumb-emoji"><img src="/img/logo/Capuccino(2).png" alt="" height="200"></span>
+                <span class="thumb-label">Capuccino</span>
+              </div>
+              <span class="prod-badge badge-sale">SALE</span>
+              <button class="prod-wish" aria-label="Wishlist"><i class="bi bi-heart-fill"></i></button>
+            </div>
+            <div class="prod-card-body">
+              <span class="prod-card-cat">Coffee</span>
+              <p class="prod-card-name">Capuccino</p>
+              <div class="prod-stars">★★★★★ <span class="rev">(259)</span></div>
+              <p class="prod-card-desc">A rich espresso base topped with steamed milk and a thick layer of foam, often dusted with cocoa for a warm, aromatic finish.</p>
+              <div class="prod-price">₱49 <span class="prod-price-orig">₱59</span> <span class="prod-price-save">Save 8%</span></div>
+              <div class="prod-card-footer">
+                <button class="db-btn-primary flex-grow-1" data-bs-toggle="modal" data-bs-target="#modal-10"><i class="bi bi-plus-lg"></i> Add to Order</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Card 11 -->
+        <div class="col" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="00">
+          <div class="prod-card">
+            <div class="prod-card-img">
+              <div class="prod-card-thumb" style="background:linear-gradient(135deg,#d4c5b0 0%,#8b6553 100%);">
+                <img class="thumb-emoji" src="/img/logo/Cafe Americano(2).png" alt="" height="200">
+                <span class="thumb-label">Cafe Americano</span>
+              </div>
+              <button class="prod-wish" aria-label="Wishlist"><i class="bi bi-heart-fill"></i></button>
+            </div>
+            <div class="prod-card-body">
+              <span class="prod-card-cat">Coffee</span>
+              <p class="prod-card-name">Cafe Americano</p>
+              <div class="prod-stars">★★★★<span class="dim">★</span> <span class="rev">(96)</span></div>
+              <p class="prod-card-desc">A bold, smooth coffee made by diluting espresso with hot water, giving it a deep, rich flavor and a dark, transparent tone.</p>
+              <div class="prod-price">₱49</div>
+              <div class="prod-card-footer">
+                <button class="db-btn-primary flex-grow-1" data-bs-toggle="modal" data-bs-target="#modal-11"><i class="bi bi-plus-lg"></i> Add to Order</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Card 12 -->
+        <div class="col" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="00">
+          <div class="prod-card">
+            <div class="prod-card-img">
+              <div class="prod-card-thumb" style="background:linear-gradient(135deg,#e7d6be 0%,#dcae77 100%);">
+                <span class="thumb-emoji"><img src="/img/logo/Vanilla Latte(2).png" alt="" height="200"></span>
+                <span class="thumb-label">Vanilla Latte</span>
+              </div>
+              <button class="prod-wish" aria-label="Wishlist"><i class="bi bi-heart-fill"></i></button>
+            </div>
+            <div class="prod-card-body">
+              <span class="prod-card-cat">Coffee</span>
+              <p class="prod-card-name">Vanilla Latte</p>
+              <div class="prod-stars">★★★★<span class="dim">★</span> <span class="rev">(76)</span></div>
+              <p class="prod-card-desc">Espresso and milk infused with vanilla syrup, giving a soft, aromatic sweetness and creamy texture.</p>
+              <div class="prod-price">₱59</div>
+              <div class="prod-card-footer">
+                <button class="db-btn-primary flex-grow-1" data-bs-toggle="modal" data-bs-target="#modal-12"><i class="bi bi-plus-lg"></i> Add to Order</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Card 13 -->
+        <div class="col" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="00">
+          <div class="prod-card">
+            <div class="prod-card-img">
+              <div class="prod-card-thumb" style="background:linear-gradient(135deg,#684a21 0%,#caa16d 100%);">
+                <span class="thumb-emoji"><img src="/img/logo/Spanish Latte(2).png" alt="" height="200"></span>
+                <span class="thumb-label">Spanish Latte</span>
+              </div>
+              <button class="prod-wish" aria-label="Wishlist"><i class="bi bi-heart-fill"></i></button>
+            </div>
+            <div class="prod-card-body">
+              <span class="prod-card-cat">Coffee</span>
+              <p class="prod-card-name">Spanish Latte</p>
+              <div class="prod-stars">★★★★<span class="dim">★</span> <span class="rev">(76)</span></div>
+              <p class="prod-card-desc">Creamy milk and condensed milk at the base, with bold espresso poured on top for a rich, layered finish.</p>
+              <div class="prod-price">₱59</div>
+              <div class="prod-card-footer">
+                <button class="db-btn-primary flex-grow-1" data-bs-toggle="modal" data-bs-target="#modal-13"><i class="bi bi-plus-lg"></i> Add to Order</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Card 14 -->
+        <div class="col" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="00">
+          <div class="prod-card">
+            <div class="prod-card-img">
+              <div class="prod-card-thumb" style="background:linear-gradient(135deg,#ce9810 0%,#e6b672 100%);">
+                <span class="thumb-emoji"><img src="/img/logo/Caramel Machiatto(2).png" alt="" height="200"></span>
+                <span class="thumb-label">Caramel Machiatto</span>
+              </div>
+              <button class="prod-wish" aria-label="Wishlist"><i class="bi bi-heart-fill"></i></button>
+            </div>
+            <div class="prod-card-body">
+              <span class="prod-card-cat">Coffee</span>
+              <p class="prod-card-name">Caramel Machiatto</p>
+              <div class="prod-stars">★★★★<span class="dim">★</span> <span class="rev">(76)</span></div>
+              <p class="prod-card-desc">Espresso poured over milk and vanilla syrup, finished with golden caramel drizzle for a sweet contrast.</p>
+              <div class="prod-price">₱59</div>
+              <div class="prod-card-footer">
+                <button class="db-btn-primary flex-grow-1" data-bs-toggle="modal" data-bs-target="#modal-14"><i class="bi bi-plus-lg"></i> Add to Order</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Card 15 -->
+        <div class="col" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="00">
+          <div class="prod-card">
+            <div class="prod-card-img">
+              <div class="prod-card-thumb" style="background:linear-gradient(135deg,#745326 0%,#aceb52 100%);">
+                <span class="thumb-emoji"><img src="/img/logo/Matcha Espresso.png" alt="" height="200"></span>
+                <span class="thumb-label">Matcha Espresso</span>
+              </div>
+              <span class="prod-badge badge-new">NEW</span>
+              <button class="prod-wish" aria-label="Wishlist"><i class="bi bi-heart-fill"></i></button>
+            </div>
+            <div class="prod-card-body">
+              <span class="prod-card-cat">Coffee</span>
+              <p class="prod-card-name">Matcha Espresso</p>
+              <div class="prod-stars">★★★★<span class="dim">★</span> <span class="rev">(76)</span></div>
+              <p class="prod-card-desc">A bold fusion of matcha and espresso, combining earthy green tea notes with deep coffee intensity.</p>
+              <div class="prod-price">₱59</div>
+              <div class="prod-card-footer">
+                <button class="db-btn-primary flex-grow-1" data-bs-toggle="modal" data-bs-target="#modal-15"><i class="bi bi-plus-lg"></i> Add to Order</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Non-Coffee -->
+    <div id="noncoffee" class="mb-5">
+      <h2 class="cat-heading" data-aos="fade-right" data-aos-duration="500" data-aos-delay="00"><span>🍵</span>Non-Coffee</h2>
+      <div class="row row-cols-2 row-cols-sm-2 row-cols-lg-3 row-cols-xl-4 g-4">
+        <!-- Card 16 -->
+        <div class="col" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="00">
+          <div class="prod-card">
+            <div class="prod-card-img">
+              <div class="prod-card-thumb" style="background:linear-gradient(135deg,#e0cccc 0%,#dd5882 100%);">
+                <span class="thumb-emoji"><img src="/img/logo/Nutella Loco.png" alt="" height="200"></span>
+                <span class="thumb-label">Nutella Loco</span>
+              </div>
+              <span class="prod-badge badge-bestseller">BESTSELLER</span>
+              <button class="prod-wish" aria-label="Wishlist"><i class="bi bi-heart-fill"></i></button>
+            </div>
+            <div class="prod-card-body">
+              <span class="prod-card-cat">Non-Coffee</span>
+              <p class="prod-card-name">Nutella Loco</p>
+              <div class="prod-stars">★★★★★ <span class="rev">(321)</span></div>
+              <p class="prod-card-desc">Velvety Nutella and milk swirled together, topped with whipped cream and hazelnuts.</p>
+              <div class="prod-price">₱69</div>
+              <div class="prod-card-footer">
+                <button class="db-btn-primary flex-grow-1" data-bs-toggle="modal" data-bs-target="#modal-16"><i class="bi bi-plus-lg"></i> Add to Order</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Card 17 -->
+        <div class="col" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="00">
+          <div class="prod-card">
+            <div class="prod-card-img">
+              <div class="prod-card-thumb" style="background:linear-gradient(135deg,#dabb83 0%,#b47a2f 100%);">
+                <span class="thumb-emoji"><img src="/img/logo/Chocolate Milk.png" alt="" height="200"></span>
+                <span class="thumb-label">Chocolate Milk</span>
+              </div>
+              <button class="prod-wish" aria-label="Wishlist"><i class="bi bi-heart-fill"></i></button>
+            </div>
+            <div class="prod-card-body">
+              <span class="prod-card-cat">Non-Coffee</span>
+              <p class="prod-card-name">Chocolate Milk</p>
+              <div class="prod-stars">★★★★<span class="dim">★</span> <span class="rev">(112)</span></div>
+              <p class="prod-card-desc">Classic blend of milk and chocolate syrup, indulgent and comforting. </p>
+              <div class="prod-price">₱49</div>
+              <div class="prod-card-footer">
+                <button class="db-btn-primary flex-grow-1" data-bs-toggle="modal" data-bs-target="#modal-17"><i class="bi bi-plus-lg"></i> Add to Order</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Card 18 -->
+        <div class="col" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="00">
+          <div class="prod-card">
+            <div class="prod-card-img">
+              <div class="prod-card-thumb" style="background:linear-gradient(135deg,#9bc98a 0%,#36c017 100%);">
+                <span class="thumb-emoji"><img src="/img/logo/Matcha Latte 2.png" alt="" height="200"></span>
+                <span class="thumb-label">Matcha Latte</span>
+              </div>
+              <span class="db-modal-badge badge-hot">HOT</span>
+              <button class="prod-wish" aria-label="Wishlist"><i class="bi bi-heart-fill"></i></button>
+            </div>
+            <div class="prod-card-body">
+              <span class="prod-card-cat">Non-Coffee</span>
+              <p class="prod-card-name">Matcha Latte</p>
+              <div class="prod-stars">★★★★<span class="dim">★</span> <span class="rev">(89)</span></div>
+              <p class="prod-card-desc">Earthy Japanese matcha whisked with milk, creating a vibrant green drink with a smooth, vegetal sweetness.</p>
+              <div class="prod-price">₱49</div>
+              <div class="prod-card-footer">
+                <button class="db-btn-primary flex-grow-1" data-bs-toggle="modal" data-bs-target="#modal-18"><i class="bi bi-plus-lg"></i> Add to Order</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Card 19 -->
+        <div class="col" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="00">
+          <div class="prod-card">
+            <div class="prod-card-img">
+              <div class="prod-card-thumb" style="background:linear-gradient(135deg,#c71556 0%,#5cd274 100%);">
+                <span class="thumb-emoji"><img src="/img/logo/Matchaberry.png" alt="" height="200"></span>
+                <span class="thumb-label">Matchaberry</span>
+              </div>
+              <span class="prod-badge badge-sale">SALE</span>
+              <button class="prod-wish" aria-label="Wishlist"><i class="bi bi-heart-fill"></i></button>
+            </div>
+            <div class="prod-card-body">
+              <span class="prod-card-cat">Non-Coffee</span>
+              <p class="prod-card-name">Matchaberry</p>
+              <div class="prod-stars">★★★★★ <span class="rev">(199)</span></div>
+              <p class="prod-card-desc">Earthy matcha layered over strawberry milk for a vibrant, balanced mix.</p>
+              <div class="prod-price">₱52 <span class="prod-price-orig">₱59</span> <span class="prod-price-save">Save 11%</span></div>
+              <div class="prod-card-footer">
+                <button class="db-btn-primary flex-grow-1" data-bs-toggle="modal" data-bs-target="#modal-19"><i class="bi bi-plus-lg"></i> Add to Order</button>
+              </div>
+            </div>
+          </div>
+        </div>
+         <!-- Card 20 -->
+        <div class="col" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="00">
+          <div class="prod-card">
+            <div class="prod-card-img">
+              <div class="prod-card-thumb" style="background:linear-gradient(135deg,#c71556 0%,#966d2c 100%);">
+                <span class="thumb-emoji"><img src="/img/logo/Chocoberry.png" alt="" height="200"></span>
+                <span class="thumb-label">Chocoberry</span>
+              </div>
+              <span class="prod-badge badge-sale">SALE</span>
+              <button class="prod-wish" aria-label="Wishlist"><i class="bi bi-heart-fill"></i></button>
+            </div>
+            <div class="prod-card-body">
+              <span class="prod-card-cat">Non-Coffee</span>
+              <p class="prod-card-name">Chocoberry</p>
+              <div class="prod-stars">★★★★★ <span class="rev">(199)</span></div>
+              <p class="prod-card-desc">Smooth chocolate layered over strawberry milk for a rich, dessert-like fusion.</p>
+              <div class="prod-price">₱52 <span class="prod-price-orig">₱59</span> <span class="prod-price-save">Save 11%</span></div>
+              <div class="prod-card-footer">
+                <button class="db-btn-primary flex-grow-1" data-bs-toggle="modal" data-bs-target="#modal-20"><i class="bi bi-plus-lg"></i> Add to Order</button>
+              </div>
+            </div>
+          </div>
+        </div>
+         <!-- Card 21 -->
+        <div class="col" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="00">
+          <div class="prod-card">
+            <div class="prod-card-img">
+              <div class="prod-card-thumb" style="background:linear-gradient(135deg,#b89254 0%,#8f6424 100%);">
+                <span class="thumb-emoji"><img src="/img/logo/Milkberry.png" alt="" height="200"></span>
+                <span class="thumb-label">Milkberry</span>
+              </div>
+              <span class="prod-badge badge-sale">SALE</span>
+              <button class="prod-wish" aria-label="Wishlist"><i class="bi bi-heart-fill"></i></button>
+            </div>
+            <div class="prod-card-body">
+              <span class="prod-card-cat">Non-Coffee</span>
+              <p class="prod-card-name">Milkberry</p>
+              <div class="prod-stars">★★★★★ <span class="rev">(199)</span></div>
+              <p class="prod-card-desc">Creamy milk blended with fresh strawberry purée for a sweet, fruity refresh.</p>
+              <div class="prod-price">₱44 <span class="prod-price-orig">₱49</span> <span class="prod-price-save">Save 11%</span></div>
+              <div class="prod-card-footer">
+                <button class="db-btn-primary flex-grow-1" data-bs-toggle="modal" data-bs-target="#modal-21"><i class="bi bi-plus-lg"></i> Add to Order</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    <!-- Fruit Soda -->
+    <div id="fruitsoda" class="mb-5">
+      <h2 class="cat-heading" data-aos="fade-right" data-aos-duration="500" data-aos-delay="00"><span>🍹</span>Fruit Soda</h2>
+      <div class="row row-cols-2 row-cols-sm-2 row-cols-lg-3 row-cols-xl-4 g-4">
+        <!-- Card 22 -->
+        <div class="col" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="00">
+          <div class="prod-card">
+            <div class="prod-card-img">
+              <div class="prod-card-thumb" style="background:linear-gradient(135deg,#a7f1ad 0%,#41e91b 100%);">
+                <span class="thumb-emoji"><img src="/img/logo/Apple Soda.png" alt="" height="200"></span>
+                <span class="thumb-label">Apple Soda</span>
+              </div>
+              <span class="prod-badge badge-bestseller">BESTSELLER</span>
+              <button class="prod-wish" aria-label="Wishlist"><i class="bi bi-heart-fill"></i></button>
+            </div>
+            <div class="prod-card-body">
+              <span class="prod-card-cat">Fruit Soda</span>
+              <p class="prod-card-name">Apple Soda</p>
+              <div class="prod-stars">★★★★★ <span class="rev">(321)</span></div>
+              <p class="prod-card-desc">Crisp and tangy green apple soda with a bright base fading into clear Sprite fizz.</p>
+              <div class="prod-price">₱49</div>
+              <div class="prod-card-footer">
+                <button class="db-btn-primary flex-grow-1" data-bs-toggle="modal" data-bs-target="#modal-22"><i class="bi bi-plus-lg"></i> Add to Order</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Card 23 -->
+        <div class="col" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="00">
+          <div class="prod-card">
+            <div class="prod-card-img">
+              <div class="prod-card-thumb" style="background:linear-gradient(135deg,#acc0f2 0%,#155ac8 100%);">
+                <span class="thumb-emoji"><img src="/img/logo/Blueberry Soda.png" alt="" height="200"></span>
+                <span class="thumb-label">Blueberry Soda</span>
+              </div>
+              <button class="prod-wish" aria-label="Wishlist"><i class="bi bi-heart-fill"></i></button>
+            </div>
+            <div class="prod-card-body">
+              <span class="prod-card-cat">Fruit Soda</span>
+              <p class="prod-card-name">Blueberry Soda</p>
+              <div class="prod-stars">★★★★<span class="dim">★</span> <span class="rev">(112)</span></div>
+              <p class="prod-card-desc">Deep blueberry flavor with a smooth gradient to clear soda, refreshing and sweet. </p>
+              <div class="prod-price">₱49</div>
+              <div class="prod-card-footer">
+                <button class="db-btn-primary flex-grow-1" data-bs-toggle="modal" data-bs-target="#modal-23"><i class="bi bi-plus-lg"></i> Add to Order</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Card 24 -->
+        <div class="col" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="00">
+          <div class="prod-card">
+            <div class="prod-card-img">
+              <div class="prod-card-thumb" style="background:linear-gradient(135deg,#e39b9b 0%,#d45332 100%);">
+                <span class="thumb-emoji"><img src="/img/logo/Strawberry Soda.png" alt="" height="200"></span>
+                <span class="thumb-label">Strawberry Soda</span>
+              </div>
+              <span class="prod-badge badge-hot">HOT</span>
+              <button class="prod-wish" aria-label="Wishlist"><i class="bi bi-heart-fill"></i></button>
+            </div>
+            <div class="prod-card-body">
+              <span class="prod-card-cat">Fruit Soda</span>
+              <p class="prod-card-name">Strawberry Soda</p>
+              <div class="prod-stars">★★★★<span class="dim">★</span> <span class="rev">(89)</span></div>
+              <p class="prod-card-desc">Juicy strawberry soda with a vibrant pink base that lightens upward into sparkling clarity.</p>
+              <div class="prod-price">₱49</div>
+              <div class="prod-card-footer">
+                <button class="db-btn-primary flex-grow-1" data-bs-toggle="modal" data-bs-target="#modal-24"><i class="bi bi-plus-lg"></i> Add to Order</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOD -->
+    <div id="food" class="mb-5">
+      <h2 class="cat-heading" data-aos="fade-right" data-aos-duration="500" data-aos-delay="00"><span>🍔</span> Food</h2>
+      <div class="row row-cols-2 row-cols-sm-2 row-cols-lg-3 row-cols-xl-4 g-4">
+        <!-- Card 25 -->
+        <div class="col" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="00">
+          <div class="prod-card">
+            <div class="prod-card-img">
+              <div class="prod-card-thumb" style="background:linear-gradient(135deg,#f5e6c8 0%,#d4a857 100%);">
+                <span class="thumb-emoji"><img src="/img/logo/Classic_Burger-removebg-preview.png" alt="" height="200"></span>
+                <span class="thumb-label">Classic Burger</span>
+              </div>
+              <button class="prod-wish" aria-label="Wishlist"><i class="bi bi-heart-fill"></i></button>
+            </div>
+            <div class="prod-card-body">
+              <span class="prod-card-cat">Food</span>
+              <p class="prod-card-name">Classic Burger</p>
+              <div class="prod-stars">★★★★<span class="dim">★</span> <span class="rev">(55)</span></div>
+              <p class="prod-card-desc">A timeless favorite featuring a juicy grilled beef patty, melted cheddar, crisp lettuce, ripe tomato, and pickles between toasted sesame buns — simple, hearty, and satisfying.</p>
+              <div class="prod-price">₱99</div>
+              <div class="prod-card-footer">
+                <button class="db-btn-primary flex-grow-1" data-bs-toggle="modal" data-bs-target="#modal-25"><i class="bi bi-plus-lg"></i> Add to Order</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Card 26 -->
+        <div class="col" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="00">
+          <div class="prod-card">
+            <div class="prod-card-img">
+              <div class="prod-card-thumb" style="background:linear-gradient(135deg,#f5d8c0 0%,#c8763a 100%);">
+                <span class="thumb-emoji"><img src="/img/logo/Bacon_Burger-removebg-preview.png" alt="" height="200"></span>
+                <span class="thumb-label">Bacon Burger</span>
+              </div>
+              <button class="prod-wish" aria-label="Wishlist"><i class="bi bi-heart-fill"></i></button>
+            </div>
+            <div class="prod-card-body">
+              <span class="prod-card-cat">Food</span>
+              <p class="prod-card-name">Bacon Burger</p>
+              <div class="prod-stars">★★★★★ <span class="rev">(72)</span></div>
+              <p class="prod-card-desc">Smoky and rich, layered with crispy bacon, melted cheddar, fresh vegetables, and a char-grilled patty — a perfect balance of savory crunch and creamy melt.</p>
+              <div class="prod-price">₱129</div>
+              <div class="prod-card-footer">
+                <button class="db-btn-primary flex-grow-1" data-bs-toggle="modal" data-bs-target="#modal-26"><i class="bi bi-plus-lg"></i> Add to Order</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Card 27 -->
+        <div class="col" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="00">
+          <div class="prod-card">
+            <div class="prod-card-img">
+              <div class="prod-card-thumb" style="background:linear-gradient(135deg,#a58965 0%,#915e23 100%);">
+                <span class="thumb-emoji"><img src="/img/logo/Overload_Burger-removebg-preview.png" alt="" height="200"></span>
+                <span class="thumb-label">Overload Burger</span>
+              </div>
+              <span class="prod-badge badge-hot">HOT</span>
+              <button class="prod-wish" aria-label="Wishlist"><i class="bi bi-heart-fill"></i></button>
+            </div>
+            <div class="prod-card-body">
+              <span class="prod-card-cat">Food</span>
+              <p class="prod-card-name">Overload Burger</p>
+              <div class="prod-stars">★★★★★ <span class="rev">(143)</span></div>
+              <p class="prod-card-desc">A bold double-stack of beef, bacon, and cheddar, towering with flavor and texture — indulgent, juicy, and made for those who crave the ultimate bite.</p>
+              <div class="prod-price">₱149</div>
+              <div class="prod-card-footer">
+                <button class="db-btn-primary flex-grow-1" data-bs-toggle="modal" data-bs-target="#modal-27"><i class="bi bi-plus-lg"></i> Add to Order</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Card 28 -->
+        <div class="col" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="00">
+          <div class="prod-card">
+            <div class="prod-card-img">
+              <div class="prod-card-thumb" style="background:linear-gradient(135deg,#f0d4a8 0%,#c8a040 100%);">
+                <span class="thumb-emoji"><img src="/img/logo/Beef_and_Mushroom-removebg-preview.png" alt="" height="200"></span>
+                <span class="thumb-label">Beef and Mushroom</span>
+              </div>
+              <span class="prod-badge badge-sale">SALE</span>
+              <button class="prod-wish" aria-label="Wishlist"><i class="bi bi-heart-fill"></i></button>
+            </div>
+            <div class="prod-card-body">
+              <span class="prod-card-cat">Food</span>
+              <p class="prod-card-name">Beef and Mushroom</p>
+              <div class="prod-stars">★★★★<span class="dim">★</span> <span class="rev">(48)</span></div>
+              <p class="prod-card-desc">A hearty blend of seasoned beef, sautéed mushrooms, and caramelized onions over bubbly mozzarella — rich, earthy, and perfectly balanced.</p>
+              <div class="prod-price">207 <span class="prod-price-orig">₱225</span> <span class="prod-price-save">Save 8%</span></div>
+              <div class="prod-card-footer">
+                <button class="db-btn-primary flex-grow-1" data-bs-toggle="modal" data-bs-target="#modal-28"><i class="bi bi-plus-lg"></i> Add to Order</button>
+              </div>
+            </div>
+          </div>
+        </div>
+         <!-- Card 29 -->
+        <div class="col" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="00">
+          <div class="prod-card">
+            <div class="prod-card-img">
+              <div class="prod-card-thumb" style="background:linear-gradient(135deg,#f0d4a8 0%,#c8a040 100%);">
+                <span class="thumb-emoji"><img src="/img/logo/Hawaiian_Pizza-removebg-preview.png" alt="" height="200"></span>
+                <span class="thumb-label">Hawaiian Pizza</span>
+              </div>
+              <span class="prod-badge badge-sale">SALE</span>
+              <button class="prod-wish" aria-label="Wishlist"><i class="bi bi-heart-fill"></i></button>
+            </div>
+            <div class="prod-card-body">
+              <span class="prod-card-cat">Food</span>
+              <p class="prod-card-name">Hawaiian Pizza</p>
+              <div class="prod-stars">★★★★<span class="dim">★</span> <span class="rev">(48)</span></div>
+              <p class="prod-card-desc">A tropical favorite with sweet pineapple chunks, savory ham, and golden mozzarella on a crisp crust — bright, juicy, and comforting.</p>
+              <div class="prod-price">₱207 <span class="prod-price-orig">₱225</span> <span class="prod-price-save">Save 8%</span></div>
+              <div class="prod-card-footer">
+                <button class="db-btn-primary flex-grow-1" data-bs-toggle="modal" data-bs-target="#modal-29"><i class="bi bi-plus-lg"></i> Add to Order</button>
+              </div>
+            </div>
+          </div>
+        </div>
+         <!-- Card 30 -->
+        <div class="col" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="00">
+          <div class="prod-card">
+            <div class="prod-card-img">
+              <div class="prod-card-thumb" style="background:linear-gradient(135deg,#f0d4a8 0%,#c8a040 100%);">
+                <span class="thumb-emoji"><img src="/img/logo/Pepperoni_Pizza-removebg-preview.png" alt="" height="200"></span>
+                <span class="thumb-label">Pepperoni Pizza</span>
+              </div>
+              <span class="prod-badge badge-sale">SALE</span>
+              <button class="prod-wish" aria-label="Wishlist"><i class="bi bi-heart-fill"></i></button>
+            </div>
+            <div class="prod-card-body">
+              <span class="prod-card-cat">Food</span>
+              <p class="prod-card-name">Pepperoni Pizza</p>
+              <div class="prod-stars">★★★★<span class="dim">★</span> <span class="rev">(48)</span></div>
+              <p class="prod-card-desc">A timeless classic topped with zesty tomato sauce, melted mozzarella, and crispy pepperoni slices — bold, simple, and irresistibly flavorful.</p>
+              <div class="prod-price">₱194 <span class="prod-price-orig">₱210</span> <span class="prod-price-save">Save 8%</span></div>
+              <div class="prod-card-footer">
+                <button class="db-btn-primary flex-grow-1" data-bs-toggle="modal" data-bs-target="#modal-30"><i class="bi bi-plus-lg"></i> Add to Order</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pagination -->
+    <nav class="mt-2 d-flex justify-content-center" aria-label="Menu pages">
+      <ul class="pagination prod-pagination">
+        <li class="page-item disabled"><a class="page-link">‹</a></li>
+        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="#">›</a></li>
+      </ul>
+    </nav>
+  </div>
+</section>
+
+<!-- MODALS (Drink Size + Food Confirmation) -->
+<!-- Modal 1 -->
+<div class="modal fade db-modal" id="modal-1" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header" style="background:linear-gradient(135deg,#c8a97e 0%,#6b3e26 100%);">
+        <div class="db-modal-thumb"><span class="thumb-emoji"><img src="/img/logo/Hershey_s milk tea.png" alt="Hershey's Boba" class="db-modal-img"></span><span class="thumb-label">Hershey's Boba</span></div>
+        <span class="db-modal-badge badge-bestseller">BESTSELLER</span>
+        <button class="btn-close-modal" data-bs-dismiss="modal"><i class="bi bi-x-lg"></i></button>
+      </div>
+      <div class="modal-body">
+        <div class="db-modal-cat">Milk Tea</div>
+        <div class="db-modal-name">Hershey's Boba</div>
+        <div class="db-modal-stars">★★★★★ <span class="rev">(312 reviews)</span></div>
+        <p class="db-modal-desc">Rich Hershey's chocolate syrup marbled with creamy milk tea. Indulgent cocoa sweetness, smooth texture, luscious dark chocolate hue.</p>
+        <div class="db-modal-label">Choose your size</div>
+        <div class="size-options">
+          <div class="size-option"><input type="radio" name="size-1" id="sz-1-s" checked><label for="sz-1-s"><span class="sz-cup">🥤</span><span class="sz-name">TALL</span><span class="sz-ml">Small · 12oz</span><span class="sz-price">₱49</span></label></div>
+          <div class="size-option"><input type="radio" name="size-1" id="sz-1-m"><label for="sz-1-m"><span class="sz-cup">🧋</span><span class="sz-name">VENTI</span><span class="sz-ml">Medium · 16oz</span><span class="sz-price">₱69</span></label></div>
+          <div class="size-option"><input type="radio" name="size-1" id="sz-1-l"><label for="sz-1-l"><span class="sz-cup">🫙</span><span class="sz-name">GRANDE</span><span class="sz-ml">Large · 22oz</span><span class="sz-price">₱89</span></label></div>
+        </div>
+      </div>
+      <div class="modal-footer"><button class="db-modal-add-btn" data-bs-dismiss="modal"><i class="bi bi-check-lg"></i> Confirm Order</button></div>
+    </div>
+  </div>
+</div>
+<!-- Modal 2 -->
+<div class="modal fade db-modal" id="modal-2" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header" style="background:linear-gradient(135deg,#d9b1b1 0%,#a03f44 100%);">
+        <div class="db-modal-thumb"><span class="thumb-emoji"><img src="/img/logo/Red Velvet Milk Tea.png" alt="Red Velvet Milk Tea" class="db-modal-img"></span><span class="thumb-label">Red Velvet Milk Tea</span></div>
+        <span class="db-modal-badge badge-new">NEW</span>
+        <button class="btn-close-modal" data-bs-dismiss="modal"><i class="bi bi-x-lg"></i></button>
+      </div>
+      <div class="modal-body">
+        <div class="db-modal-cat">Milk Tea</div>
+        <div class="db-modal-name">Red Velvet Milk Tea</div>
+        <div class="db-modal-stars">★★★★★ <span class="rev">(210 reviews)</span></div>
+        <p class="db-modal-desc">Decadent red velvet cocoa blended with rich, creamy milk. Indulgent cake-like sweetness, smooth velvety texture, striking crimson-violet hue.</p>
+        <div class="db-modal-label">Choose your size</div>
+        <div class="size-options">
+          <div class="size-option"><input type="radio" name="size-2" id="sz-2-s" checked><label for="sz-2-s"><span class="sz-cup">🥤</span><span class="sz-name">TALL</span><span class="sz-ml">Small · 12oz</span><span class="sz-price">₱49</span></label></div>
+          <div class="size-option"><input type="radio" name="size-2" id="sz-2-m"><label for="sz-2-m"><span class="sz-cup">🧋</span><span class="sz-name">VENTI</span><span class="sz-ml">Medium · 16oz</span><span class="sz-price">₱69</span></label></div>
+          <div class="size-option"><input type="radio" name="size-2" id="sz-2-l"><label for="sz-2-l"><span class="sz-cup">🫙</span><span class="sz-name">GRANDE</span><span class="sz-ml">Large · 22oz</span><span class="sz-price">₱89</span></label></div>
+        </div>
+      </div>
+      <div class="modal-footer"><button class="db-modal-add-btn" data-bs-dismiss="modal"><i class="bi bi-check-lg"></i> Confirm Order</button></div>
+    </div>
+  </div>
+</div>
+<!-- Modal 3 -->
+<div class="modal fade db-modal" id="modal-3" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header" style="background:linear-gradient(135deg,#b7d9a8 0%,#4a7c3f 100%);">
+        <div class="db-modal-thumb"><span class="thumb-emoji"><img src="/img/logo/Matcha Milk Tea.png" alt="Matcha Milk Tea" class="db-modal-img"></span><span class="thumb-label">Matcha Milk Tea</span></div>
+        <button class="btn-close-modal" data-bs-dismiss="modal"><i class="bi bi-x-lg"></i></button>
+      </div>
+      <div class="modal-body">
+        <div class="db-modal-cat">Milk Tea</div>
+        <div class="db-modal-name">Matcha Milk Tea</div>
+        <div class="db-modal-stars">★★★★<span style="opacity:.3">★</span> <span class="rev">(145 reviews)</span></div>
+        <p class="db-modal-desc">Premium Japanese green tea whisked with fresh milk. Earthy, vibrant flavor, smooth velvety texture, gorgeous pastel green hue.</p>
+        <div class="db-modal-label">Choose your size</div>
+        <div class="size-options">
+          <div class="size-option"><input type="radio" name="size-3" id="sz-3-s" checked><label for="sz-3-s"><span class="sz-cup">🥤</span><span class="sz-name">TALL</span><span class="sz-ml">Small · 12oz</span><span class="sz-price">₱49</span></label></div>
+          <div class="size-option"><input type="radio" name="size-3" id="sz-3-m"><label for="sz-3-m"><span class="sz-cup">🧋</span><span class="sz-name">VENTI</span><span class="sz-ml">Medium · 16oz</span><span class="sz-price">₱69</span></label></div>
+          <div class="size-option"><input type="radio" name="size-3" id="sz-3-l"><label for="sz-3-l"><span class="sz-cup">🫙</span><span class="sz-name">GRANDE</span><span class="sz-ml">Large · 22oz</span><span class="sz-price">₱89</span></label></div>
+        </div>
+      </div>
+      <div class="modal-footer"><button class="db-modal-add-btn" data-bs-dismiss="modal"><i class="bi bi-check-lg"></i> Confirm Order</button></div>
+    </div>
+  </div>
+</div>
+<!-- Modal 4 -->
+<div class="modal fade db-modal" id="modal-4" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header" style="background:linear-gradient(135deg,#e6d9c3 0%,#8f825e 100%);">
+        <div class="db-modal-thumb"><span class="thumb-emoji"><img src="/img/logo/Wintermelon Milk Tea.png" alt="Wintermelon Milk Tea" class="db-modal-img"></span><span class="thumb-label">Wintermelon Milk Tea</span></div>
+        <span class="db-modal-badge badge-sale">SALE</span>
+        <button class="btn-close-modal" data-bs-dismiss="modal"><i class="bi bi-x-lg"></i></button>
+      </div>
+      <div class="modal-body">
+        <div class="db-modal-cat">Milk Tea</div>
+        <div class="db-modal-name">Wintermelon Milk Tea</div>
+        <div class="db-modal-stars">★★★★<span style="opacity:.3">★</span> <span class="rev">(88 reviews)</span></div>
+        <p class="db-modal-desc">Sweet wintermelon syrup blended with creamy milk tea. Refreshing melon notes, lightly caramelized sweetness, comforting classic tan hue.</p>
+        <div class="db-modal-label">Choose your size</div>
+        <div class="size-options">
+          <div class="size-option"><input type="radio" name="size-4" id="sz-4-s" checked><label for="sz-4-s"><span class="sz-cup">🥤</span><span class="sz-name">TALL</span><span class="sz-ml">Small · 12oz</span><span class="sz-price">₱39</span></label></div>
+          <div class="size-option"><input type="radio" name="size-4" id="sz-4-m"><label for="sz-4-m"><span class="sz-cup">🧋</span><span class="sz-name">VENTI</span><span class="sz-ml">Medium · 16oz</span><span class="sz-price">₱59</span></label></div>
+          <div class="size-option"><input type="radio" name="size-4" id="sz-4-l"><label for="sz-4-l"><span class="sz-cup">🫙</span><span class="sz-name">GRANDE</span><span class="sz-ml">Large · 22oz</span><span class="sz-price">₱79</span></label></div>
+        </div>
+      </div>
+      <div class="modal-footer"><button class="db-modal-add-btn" data-bs-dismiss="modal"><i class="bi bi-check-lg"></i> Confirm Order</button></div>
+    </div>
+  </div>
+</div>
+<!-- Modal 5 -->
+<div class="modal fade db-modal" id="modal-5" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header" style="background:linear-gradient(135deg,#e3dede 0%,#4a4747 100%);">
+        <div class="db-modal-thumb"><span class="thumb-emoji"><img src="/img/logo/Cookies and Cream.png" alt="Cookies and Cream" class="db-modal-img"></span><span class="thumb-label">Cookies and Cream</span></div>
+        <span class="db-modal-badge badge-new">NEW</span>
+        <button class="btn-close-modal" data-bs-dismiss="modal"><i class="bi bi-x-lg"></i></button>
+      </div>
+      <div class="modal-body">
+        <div class="db-modal-cat">Milk Tea</div>
+        <div class="db-modal-name">Cookies and Cream Boba</div>
+        <div class="db-modal-stars">★★★★★ <span class="rev">(97 reviews)</span></div>
+        <p class="db-modal-desc">Velvety sweet cream milk tea loaded with crushed Oreo cookie bits. Rich vanilla sweetness, satisfying crunchy texture, playful cookies-and-cream mottled hue.</p>
+        <div class="db-modal-label">Choose your size</div>
+        <div class="size-options">
+          <div class="size-option"><input type="radio" name="size-5" id="sz-5-s" checked><label for="sz-5-s"><span class="sz-cup">🥤</span><span class="sz-name">TALL</span><span class="sz-ml">Small · 12oz</span><span class="sz-price">₱49</span></label></div>
+          <div class="size-option"><input type="radio" name="size-5" id="sz-5-m"><label for="sz-5-m"><span class="sz-cup">🧋</span><span class="sz-name">VENTI</span><span class="sz-ml">Medium · 16oz</span><span class="sz-price">₱69</span></label></div>
+          <div class="size-option"><input type="radio" name="size-5" id="sz-5-l"><label for="sz-5-l"><span class="sz-cup">🫙</span><span class="sz-name">GRANDE</span><span class="sz-ml">Large · 22oz</span><span class="sz-price">₱89</span></label></div>
+        </div>
+      </div>
+      <div class="modal-footer"><button class="db-modal-add-btn" data-bs-dismiss="modal"><i class="bi bi-check-lg"></i> Confirm Order</button></div>
+    </div>
+  </div>
+</div>
+<!-- Modal 6 -->
+<div class="modal fade db-modal" id="modal-6" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header" style="background:linear-gradient(135deg,#d0cdc0 0%,#6b5b26 100%);">
+        <div class="db-modal-thumb"><span class="thumb-emoji"><img src="/img/logo/Okinawa.png" alt="Okinawa" class="db-modal-img"></span><span class="thumb-label">Okinawa</span></div>
+        <span class="db-modal-badge badge-hot">HOT</span>
+        <button class="btn-close-modal" data-bs-dismiss="modal"><i class="bi bi-x-lg"></i></button>
+      </div>
+      <div class="modal-body">
+        <div class="db-modal-cat">Milk Tea</div>
+        <div class="db-modal-name">Okinawa Boba</div>
+        <div class="db-modal-stars">★★★★★ <span class="rev">(178 reviews)</span></div>
+        <p class="db-modal-desc">Roasted Okinawa brown sugar blended with classic black milk tea. Deep molasses sweetness, robust full-bodied texture, beautiful rich golden-brown hue.</p>
+        <div class="db-modal-label">Choose your size</div>
+        <div class="size-options">
+          <div class="size-option"><input type="radio" name="size-6" id="sz-6-s" checked><label for="sz-6-s"><span class="sz-cup">🥤</span><span class="sz-name">TALL</span><span class="sz-ml">Small · 12oz</span><span class="sz-price">₱49</span></label></div>
+          <div class="size-option"><input type="radio" name="size-6" id="sz-6-m"><label for="sz-6-m"><span class="sz-cup">🧋</span><span class="sz-name">VENTI</span><span class="sz-ml">Medium · 16oz</span><span class="sz-price">₱69</span></label></div>
+          <div class="size-option"><input type="radio" name="size-6" id="sz-6-l"><label for="sz-6-l"><span class="sz-cup">🫙</span><span class="sz-name">GRANDE</span><span class="sz-ml">Large · 22oz</span><span class="sz-price">₱89</span></label></div>
+        </div>
+      </div>
+      <div class="modal-footer"><button class="db-modal-add-btn" data-bs-dismiss="modal"><i class="bi bi-check-lg"></i> Confirm Order</button></div>
+    </div>
+  </div>
+</div>
+<!-- Modal 7 -->
+<div class="modal fade db-modal" id="modal-7" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header" style="background:linear-gradient(135deg,#928f82 0%,#9d783c 100%);">
+        <div class="db-modal-thumb"><span class="thumb-emoji"><img src="/img/logo/Wintermelon Oreo.png" alt="Wintermelon Oreo" class="db-modal-img"></span><span class="thumb-label">Wintermelon Oreo</span></div>
+        <span class="db-modal-badge badge-new">NEW</span>
+        <button class="btn-close-modal" data-bs-dismiss="modal"><i class="bi bi-x-lg"></i></button>
+      </div>
+      <div class="modal-body">
+        <div class="db-modal-cat">Milk Tea</div>
+        <div class="db-modal-name">Wintermelon Oreo Boba</div>
+        <div class="db-modal-stars">★★★★★ <span class="rev">(204 reviews)</span></div>
+        <p class="db-modal-desc">Sweet wintermelon syrup blended with creamy milk tea. Refreshing melon notes, lightly caramelized sweetness, comforting classic tan hue.</p>
+        <div class="db-modal-label">Choose your size</div>
+        <div class="size-options">
+          <div class="size-option"><input type="radio" name="size-7" id="sz-7-s" checked><label for="sz-7-s"><span class="sz-cup">🥤</span><span class="sz-name">TALL</span><span class="sz-ml">Small · 12oz</span><span class="sz-price">₱59</span></label></div>
+          <div class="size-option"><input type="radio" name="size-7" id="sz-7-m"><label for="sz-7-m"><span class="sz-cup">🧋</span><span class="sz-name">VENTI</span><span class="sz-ml">Medium · 16oz</span><span class="sz-price">₱79</span></label></div>
+          <div class="size-option"><input type="radio" name="size-7" id="sz-7-l"><label for="sz-7-l"><span class="sz-cup">🫙</span><span class="sz-name">GRANDE</span><span class="sz-ml">Large · 22oz</span><span class="sz-price">₱99</span></label></div>
+        </div>
+      </div>
+      <div class="modal-footer"><button class="db-modal-add-btn" data-bs-dismiss="modal"><i class="bi bi-check-lg"></i> Confirm Order</button></div>
+    </div>
+  </div>
+</div>
+<!-- Modal 8 -->
+<div class="modal fade db-modal" id="modal-8" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header" style="background:linear-gradient(135deg,#d4b896 0%,#4a2c1a 100%);">
+        <div class="db-modal-thumb"><span class="thumb-emoji"><img src="/img/logo/Mocha Latte.png" alt="Mocha Latte" class="db-modal-img"></span><span class="thumb-label">Mocha Latte</span></div>
+              <span class="prod-badge badge-bestseller">BESTSELLER</span>
+        <button class="btn-close-modal" data-bs-dismiss="modal"><i class="bi bi-x-lg"></i></button>
+      </div>
+      <div class="modal-body">
+        <div class="db-modal-cat">Coffee</div>
+        <div class="db-modal-name">Mocha Latte</div>
+        <div class="db-modal-stars">★★★★<span style="opacity:.3">★</span> <span class="rev">(133 reviews)</span></div>
+        <p class="db-modal-desc">A bold shot of espresso poured over a glass of cold water. Clean, smooth, and perfectly balanced — the foundation of a great coffee.</p>
+        <div class="db-modal-label">Choose your size</div>
+        <div class="size-options">
+          <div class="size-option"><input type="radio" name="size-8" id="sz-8-s" checked><label for="sz-8-s"><span class="sz-cup">🥤</span><span class="sz-name">TALL</span><span class="sz-ml">Small · 12oz</span><span class="sz-price">₱59</span></label></div>
+          <div class="size-option"><input type="radio" name="size-8" id="sz-8-m"><label for="sz-8-m"><span class="sz-cup">🧋</span><span class="sz-name">VENTI</span><span class="sz-ml">Medium · 16oz</span><span class="sz-price">₱79</span></label></div>
+          <div class="size-option"><input type="radio" name="size-8" id="sz-8-l"><label for="sz-8-l"><span class="sz-cup">🫙</span><span class="sz-name">GRANDE</span><span class="sz-ml">Large · 22oz</span><span class="sz-price">₱99</span></label></div>
+        </div>
+      </div>
+      <div class="modal-footer"><button class="db-modal-add-btn" data-bs-dismiss="modal"><i class="bi bi-check-lg"></i> Confirm Order</button></div>
+    </div>
+  </div>
+</div>
+<!-- Modal 9 -->
+<div class="modal fade db-modal" id="modal-9" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header" style="background:linear-gradient(135deg,#f5d58a 0%,#c97520 100%);">
+        <div class="db-modal-thumb"><span class="thumb-emoji"><img src="/img/logo/Cafe Latte(2).png" alt="Cafe Latte" class="db-modal-img"></span><span class="thumb-label">Cafe Latte</span></div>
+        <button class="btn-close-modal" data-bs-dismiss="modal"><i class="bi bi-x-lg"></i></button>
+      </div>
+      <div class="modal-body">
+        <div class="db-modal-cat">Coffee</div>
+        <div class="db-modal-name">Cafe Latte</div>
+        <div class="db-modal-stars">★★★★★ <span class="rev">(259 reviews)</span></div>
+        <p class="db-modal-desc"></p>a creamy blend of rich espresso and steamed milk. Smooth, comforting, and perfectly balanced — the ultimate coffee indulgence.</p>
+        <div class="db-modal-label">Choose your size</div>
+        <div class="size-options">
+          <div class="size-option"><input type="radio" name="size-9" id="sz-9-s" checked><label for="sz-9-s"><span class="sz-cup">🥤</span><span class="sz-name">TALL</span><span class="sz-ml">Small · 12oz</span><span class="sz-price">₱59</span></label></div>
+          <div class="size-option"><input type="radio" name="size-9" id="sz-9-m"><label for="sz-9-m"><span class="sz-cup">🧋</span><span class="sz-name">VENTI</span><span class="sz-ml">Medium · 16oz</span><span class="sz-price">₱79</span></label></div>
+          <div class="size-option"><input type="radio" name="size-9" id="sz-9-l"><label for="sz-9-l"><span class="sz-cup">🫙</span><span class="sz-name">GRANDE</span><span class="sz-ml">Large · 22oz</span><span class="sz-price">₱99</span></label></div>
+        </div>
+      </div>
+      <div class="modal-footer"><button class="db-modal-add-btn" data-bs-dismiss="modal"><i class="bi bi-check-lg"></i> Confirm Order</button></div>
+    </div>
+  </div>
+</div>
+<!-- Modal 10 -->
+<div class="modal fade db-modal" id="modal-10" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header" style="background:linear-gradient(135deg,#f0e0c8 0%,#c8a97e 100%);">
+        <div class="db-modal-thumb"><span class="thumb-emoji"><img src="/img/logo/Capuccino(2).png" alt="Capuccino" class="db-modal-img"></span><span class="thumb-label">Capuccino</span></div>
+        <span class="db-modal-badge badge-sale">SALE</span>
+        <button class="btn-close-modal" data-bs-dismiss="modal"><i class="bi bi-x-lg"></i></button>
+      </div>
+      <div class="modal-body">
+        <div class="db-modal-cat">Coffee</div>
+        <div class="db-modal-name">Capuccino</div>
+        <div class="db-modal-stars">★★★★<span style="opacity:.3">★</span> <span class="rev">(76 reviews)</span></div>
+        <p class="db-modal-desc">A rich espresso base topped with steamed milk and a light layer of foam. Smooth, creamy, and the perfect balance of coffee and milk.</p>
+        <div class="db-modal-label">Choose your size</div>
+        <div class="size-options">
+          <div class="size-option"><input type="radio" name="size-10" id="sz-10-s" checked><label for="sz-10-s"><span class="sz-cup">🥤</span><span class="sz-name">TALL</span><span class="sz-ml">Small · 12oz</span><span class="sz-price">₱49</span></label></div>
+          <div class="size-option"><input type="radio" name="size-10" id="sz-10-m"><label for="sz-10-m"><span class="sz-cup">🧋</span><span class="sz-name">VENTI</span><span class="sz-ml">Medium · 16oz</span><span class="sz-price">₱69</span></label></div>
+          <div class="size-option"><input type="radio" name="size-10" id="sz-10-l"><label for="sz-10-l"><span class="sz-cup">🫙</span><span class="sz-name">GRANDE</span><span class="sz-ml">Large · 22oz</span><span class="sz-price">₱89</span></label></div>
+        </div>
+      </div>
+      <div class="modal-footer"><button class="db-modal-add-btn" data-bs-dismiss="modal"><i class="bi bi-check-lg"></i> Confirm Order</button></div>
+    </div>
+  </div>
+</div>
+<!-- Modal 11 -->
+<div class="modal fade db-modal" id="modal-11" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header" style="background:linear-gradient(135deg,#d4c5b0 0%,#8b6553 100%);">
+        <div class="db-modal-thumb"><span class="thumb-emoji"><img src="/img/logo/Cafe Americano(2).png" alt="Cafe Americano" class="db-modal-img"></span><span class="thumb-label">Cafe Americano</span></div>
+        <button class="btn-close-modal" data-bs-dismiss="modal"><i class="bi bi-x-lg"></i></button>
+      </div>
+      <div class="modal-body">
+        <div class="db-modal-cat">Coffee</div>
+        <div class="db-modal-name">Cafe Latte</div>
+        <div class="db-modal-stars">★★★★★ <span class="rev">(321 reviews)</span></div>
+        <p class="db-modal-desc">A rich espresso blended with chocolate and milk, topped with whipped cream.</p>
+        <div class="db-modal-label">Choose your size</div>
+        <div class="size-options">
+          <div class="size-option"><input type="radio" name="size-11" id="sz-11-s" checked><label for="sz-11-s"><span class="sz-cup">🥤</span><span class="sz-name">TALL</span><span class="sz-ml">Small · 12oz</span><span class="sz-price">₱49</span></label></div>
+          <div class="size-option"><input type="radio" name="size-11" id="sz-11-m"><label for="sz-11-m"><span class="sz-cup">🧋</span><span class="sz-name">VENTI</span><span class="sz-ml">Medium · 16oz</span><span class="sz-price">₱69</span></label></div>
+          <div class="size-option"><input type="radio" name="size-11" id="sz-11-l"><label for="sz-11-l"><span class="sz-cup">🫙</span><span class="sz-name">GRANDE</span><span class="sz-ml">Large · 22oz</span><span class="sz-price">₱89</span></label></div>
+        </div>
+      </div>
+      <div class="modal-footer"><button class="db-modal-add-btn" data-bs-dismiss="modal"><i class="bi bi-check-lg"></i> Confirm Order</button></div>
+    </div>
+  </div>
+</div>
+<!-- Modal 12 -->
+<div class="modal fade db-modal" id="modal-12" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header" style="background:linear-gradient(135deg,#e7d6be 0%,#dcae77 100%);">
+        <div class="db-modal-thumb"><span class="thumb-emoji"><img src="/img/logo/Vanilla Latte(2).png" alt="Vanilla Latte" class="db-modal-img"></span><span class="thumb-label">Vanilla Latte</span></div>
+        <button class="btn-close-modal" data-bs-dismiss="modal"><i class="bi bi-x-lg"></i></button>
+      </div>
+      <div class="modal-body">
+        <div class="db-modal-cat">Coffee</div>
+        <div class="db-modal-name">Vanilla Latte</div>
+        <div class="db-modal-stars">★★★★★ <span class="rev">(256 reviews)</span></div>
+        <p class="db-modal-desc">Espresso and milk infused with vanilla syrup, giving a soft, aromatic sweetness and creamy texture.</p>
+        <div class="db-modal-label">Choose your size</div>
+        <div class="size-options">
+          <div class="size-option"><input type="radio" name="size-12" id="sz-12-s" checked><label for="sz-12-s"><span class="sz-cup">🥤</span><span class="sz-name">TALL</span><span class="sz-ml">Small · 12oz</span><span class="sz-price">₱59</span></label></div>
+          <div class="size-option"><input type="radio" name="size-12" id="sz-12-m"><label for="sz-12-m"><span class="sz-cup">🧋</span><span class="sz-name">VENTI</span><span class="sz-ml">Medium · 16oz</span><span class="sz-price">₱79</span></label></div>
+          <div class="size-option"><input type="radio" name="size-12" id="sz-12-l"><label for="sz-12-l"><span class="sz-cup">🫙</span><span class="sz-name">GRANDE</span><span class="sz-ml">Large · 22oz</span><span class="sz-price">₱99</span></label></div>
+        </div>
+      </div>
+      <div class="modal-footer"><button class="db-modal-add-btn" data-bs-dismiss="modal"><i class="bi bi-check-lg"></i> Confirm Order</button></div>
+    </div>
+  </div>
+</div>
+<!-- Modal 13 -->
+<div class="modal fade db-modal" id="modal-13" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header" style="background:linear-gradient(135deg,#684a21 0%,#caa16d 100%);">
+        <div class="db-modal-thumb"><span class="thumb-emoji"><img src="/img/logo/Spanish Latte(2).png" alt="Spanish Latte" class="db-modal-img"> </span><span class="thumb-label">Spanish Latte</span></div>
+        <button class="btn-close-modal" data-bs-dismiss="modal"><i class="bi bi-x-lg"></i></button>
+      </div>
+      <div class="modal-body">
+        <div class="db-modal-cat">Coffee</div>
+        <div class="db-modal-name">Spanish Latte</div>
+        <div class="db-modal-stars">★★★★<span style="opacity:.3">★</span> <span class="rev">(89 reviews)</span></div>
+        <p class="db-modal-desc">Creamy milk and condensed milk at the base, with bold espresso poured on top for a rich, layered finish.</p>
+        <div class="db-modal-label">Choose your size</div>
+        <div class="size-options">
+          <div class="size-option"><input type="radio" name="size-13" id="sz-13-s" checked><label for="sz-13-s"><span class="sz-cup">🥤</span><span class="sz-name">TALL</span><span class="sz-ml">Small · 12oz</span><span class="sz-price">₱59</span></label></div>
+          <div class="size-option"><input type="radio" name="size-13" id="sz-13-m"><label for="sz-13-m"><span class="sz-cup">🧋</span><span class="sz-name">VENTI</span><span class="sz-ml">Medium · 16oz</span><span class="sz-price">₱79</span></label></div>
+          <div class="size-option"><input type="radio" name="size-13" id="sz-13-l"><label for="sz-13-l"><span class="sz-cup">🫙</span><span class="sz-name">GRANDE</span><span class="sz-ml">Large · 22oz</span><span class="sz-price">₱99</span></label></div>
+        </div>
+      </div>
+      <div class="modal-footer"><button class="db-modal-add-btn" data-bs-dismiss="modal"><i class="bi bi-check-lg"></i> Confirm Order</button></div>
+    </div>
+  </div>
+</div>
+<!-- Modal 14 -->
+<div class="modal fade db-modal" id="modal-14" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header" style="background:linear-gradient(135deg,#ce9810 0%,#e6b672 100%);">
+        <div class="db-modal-thumb"><span class="thumb-emoji"><img src="/img/logo/Caramel Machiatto(2).png" alt="Caranel Machiatto" class="db-modal-img"></span><span class="thumb-label">Caramel Machiatto</span></div>
+        <button class="btn-close-modal" data-bs-dismiss="modal"><i class="bi bi-x-lg"></i></button>
+      </div>
+      <div class="modal-body">
+        <div class="db-modal-cat">Coffee</div>
+        <div class="db-modal-name">Caramel Machiatto</div>
+        <div class="db-modal-stars">★★★★★ <span class="rev">(199 reviews)</span></div>
+        <p class="db-modal-desc">Espresso poured over milk and vanilla syrup, finished with golden caramel drizzle for a sweet contrast.</p>
+        <div class="db-modal-label">Choose your size</div>
+        <div class="size-options">
+          <div class="size-option"><input type="radio" name="size-14" id="sz-14-s" checked><label for="sz-14-s"><span class="sz-cup">🥤</span><span class="sz-name">TALL</span><span class="sz-ml">Small · 12oz</span><span class="sz-price">₱59</span></label></div>
+          <div class="size-option"><input type="radio" name="size-14" id="sz-14-m"><label for="sz-14-m"><span class="sz-cup">🧋</span><span class="sz-name">VENTI</span><span class="sz-ml">Medium · 16oz</span><span class="sz-price">₱79</span></label></div>
+          <div class="size-option"><input type="radio" name="size-14" id="sz-14-l"><label for="sz-14-l"><span class="sz-cup">🫙</span><span class="sz-name">GRANDE</span><span class="sz-ml">Large · 22oz</span><span class="sz-price">₱99</span></label></div>
+        </div>
+      </div>
+      <div class="modal-footer"><button class="db-modal-add-btn" data-bs-dismiss="modal"><i class="bi bi-check-lg"></i> Confirm Order</button></div>
+    </div>
+  </div>
+</div>
+<!-- Modal 15 -->
+<div class="modal fade db-modal" id="modal-15" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header" style="background:linear-gradient(135deg,#745326 0%,#aceb52 100%);">
+        <div class="db-modal-thumb"><span class="thumb-emoji"><img src="/img/logo/Matcha Espresso.png" alt="Matcha Espresso" class="db-modal-img"></span><span class="thumb-label">Matcha Espresso</span></div>
+        <span class="prod-badge badge-new">NEW</span>
+        <button class="btn-close-modal" data-bs-dismiss="modal"><i class="bi bi-x-lg"></i></button>
+      </div>
+      <div class="modal-body">
+        <div class="db-modal-cat">Coffee</div>
+        <div class="db-modal-name">Matcha Espresso</div>
+        <div class="db-modal-stars">★★★★<span style="opacity:.3">★</span> <span class="rev">(55 reviews)</span></div>
+        <p class="db-modal-desc">A bold fusion of matcha and espresso, combining earthy green tea notes wih deep coffee intensity.</p>
+        <div class="db-modal-label">Choose your size</div>
+        <div class="size-options">
+          <div class="size-option"><input type="radio" name="size-2" id="sz-2-s" checked><label for="sz-2-s"><span class="sz-cup">🥤</span><span class="sz-name">TALL</span><span class="sz-ml">Small · 12oz</span><span class="sz-price">₱59</span></label></div>
+          <div class="size-option"><input type="radio" name="size-2" id="sz-2-m"><label for="sz-2-m"><span class="sz-cup">🧋</span><span class="sz-name">VENTI</span><span class="sz-ml">Medium · 16oz</span><span class="sz-price">₱79</span></label></div>
+          <div class="size-option"><input type="radio" name="size-2" id="sz-2-l"><label for="sz-2-l"><span class="sz-cup">🫙</span><span class="sz-name">GRANDE</span><span class="sz-ml">Large · 22oz</span><span class="sz-price">₱99</span></label></div>
+        </div>
+      </div>
+      <div class="modal-footer"><button class="db-modal-add-btn" data-bs-dismiss="modal"><i class="bi bi-check-lg"></i> Confirm Order</button></div>
+    </div>
+  </div>
+</div>
+<!-- Modal 16 -->
+<div class="modal fade db-modal" id="modal-16" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header" style="background:linear-gradient(135deg,#e0cccc 0%,#dd5882 100%);">
+        <div class="db-modal-thumb"><span class="thumb-emoji"><img src="/img/logo/Nutella Loco.png" alt="Nutella Loco" class="db-modal-img"></span><span class="thumb-label">Nutella Loco</span></div>
+        <span class="db-modal-badge badge-bestseller">BESTSELLER</span>
+        <button class="btn-close-modal" data-bs-dismiss="modal"><i class="bi bi-x-lg"></i></button>
+      </div>
+      <div class="modal-body">
+        <div class="db-modal-cat">Non-Coffee</div>
+        <div class="db-modal-name">Nutella Loco</div>
+        <div class="db-modal-stars">★★★★★ <span class="rev">(72 reviews)</span></div>
+        <p class="db-modal-desc">Creamy milk blended with fresh strawberry purée for a sweet, fruity refresh.</p>
+        <div class="db-modal-label">Choose your size</div>
+        <div class="size-options">
+          <div class="size-option"><input type="radio" name="size-2" id="sz-2-s" checked><label for="sz-2-s"><span class="sz-cup">🥤</span><span class="sz-name">TALL</span><span class="sz-ml">Small · 12oz</span><span class="sz-price">₱69</span></label></div>
+          <div class="size-option"><input type="radio" name="size-2" id="sz-2-m"><label for="sz-2-m"><span class="sz-cup">🧋</span><span class="sz-name">VENTI</span><span class="sz-ml">Medium · 16oz</span><span class="sz-price">₱89</span></label></div>
+          <div class="size-option"><input type="radio" name="size-2" id="sz-2-l"><label for="sz-2-l"><span class="sz-cup">🫙</span><span class="sz-name">GRANDE</span><span class="sz-ml">Large · 22oz</span><span class="sz-price">₱109</span></label></div>
+        </div>
+      </div>
+      <div class="modal-footer"><button class="db-modal-add-btn" data-bs-dismiss="modal"><i class="bi bi-check-lg"></i> Confirm Order — ₱99</button></div>
+    </div>
+  </div>
+</div>
+<!-- Modal 17 -->
+<div class="modal fade db-modal" id="modal-17" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header" style="background:linear-gradient(135deg,#dabb83 0%,#b47a2f 100%);">
+        <div class="db-modal-thumb"><span class="thumb-emoji"><img src="/img/logo/Chocolate Milk.png" alt="Chocolate Milk" class="db-modal-img"></span><span class="thumb-label">Chocolate Milk</span></div>
+        <button class="btn-close-modal" data-bs-dismiss="modal"><i class="bi bi-x-lg"></i></button>
+      </div>
+      <div class="modal-body">
+        <div class="db-modal-cat">Non-Coffee</div>
+        <div class="db-modal-name">Chocolate Milk</div>
+        <div class="db-modal-stars">★★★★★ <span class="rev">(143 reviews)</span></div>
+        <p class="db-modal-desc">Classic blend of milk and chocolate syrup, indulgent and comforting.</p>
+        <div class="db-modal-label">Choose your size</div>
+        <div class="size-options">
+          <div class="size-option"><input type="radio" name="size-3" id="sz-3-s" checked><label for="sz-3-s"><span class="sz-cup">🥤</span><span class="sz-name">TALL</span><span class="sz-ml">Small · 12oz</span><span class="sz-price">₱49</span></label></div>
+          <div class="size-option"><input type="radio" name="size-3" id="sz-3-m"><label for="sz-3-m"><span class="sz-cup">🧋</span><span class="sz-name">VENTI</span><span class="sz-ml">Medium · 16oz</span><span class="sz-price">₱69</span></label></div>
+          <div class="size-option"><input type="radio" name="size-3" id="sz-3-l"><label for="sz-3-l"><span class="sz-cup">🫙</span><span class="sz-name">GRANDE</span><span class="sz-ml">Large · 22oz</span><span class="sz-price">₱89</span></label></div>
+        </div>
+      </div>
+      <div class="modal-footer"><button class="db-modal-add-btn" data-bs-dismiss="modal"><i class="bi bi-check-lg"></i> Confirm Order </button></div>
+    </div>
+  </div>
+</div>
+<!-- Modal 18 -->
+<div class="modal fade db-modal" id="modal-18" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header" style="background:linear-gradient(135deg,#9bc98a 0%,#36c017 100%);">
+        <div class="db-modal-thumb"><span class="thumb-emoji"><img src="/img/logo/Matcha Latte 2.png" alt="Matcha Latte" class="db-modal-img"></span><span class="thumb-label">Matcha Latte</span></div>
+        <span class="db-modal-badge badge-hot">HOT</span>
+        <button class="btn-close-modal" data-bs-dismiss="modal"><i class="bi bi-x-lg"></i></button>
+      </div>
+      <div class="modal-body">
+        <div class="db-modal-cat">Non-Coffee</div>
+        <div class="db-modal-name">Matcha Latte</div>
+        <div class="db-modal-stars">★★★★★ <span class="rev">(143 reviews)</span></div>
+        <p class="db-modal-desc">Earthy Japanese matcha whisked with milk, creating a vibrant green drink with a smooth, vegetal sweetness.</p>
+        <div class="db-modal-label">Choose your size</div>
+        <div class="size-options">
+          <div class="size-option"><input type="radio" name="size-18" id="sz-18-s" checked><label for="sz-18-s"><span class="sz-cup">🥤</span><span class="sz-name">TALL</span><span class="sz-ml">Small · 12oz</span><span class="sz-price">₱49</span></label></div>
+          <div class="size-option"><input type="radio" name="size-18" id="sz-18-m"><label for="sz-18-m"><span class="sz-cup">🧋</span><span class="sz-name">VENTI</span><span class="sz-ml">Medium · 16oz</span><span class="sz-price">₱69</span></label></div>
+          <div class="size-option"><input type="radio" name="size-18" id="sz-18-l"><label for="sz-18-l"><span class="sz-cup">🫙</span><span class="sz-name">GRANDE</span><span class="sz-ml">Large · 22oz</span><span class="sz-price">₱89</span></label></div>
+        </div>
+      </div>
+      <div class="modal-footer"><button class="db-modal-add-btn" data-bs-dismiss="modal"><i class="bi bi-check-lg"></i> Confirm Order</button></div>
+    </div>
+  </div>
+</div>
+<!-- Modal 19 -->
+<div class="modal fade db-modal" id="modal-19" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header" style="background:linear-gradient(135deg,#c71556 0%,#5cd274 100%);">
+        <div class="db-modal-thumb"><span class="thumb-emoji"><img src="/img/logo/Matchaberry.png" alt="Matchaberry" class="db-modal-img"></span><span class="thumb-label">Matchaberry</span></div>
+        <span class="db-modal-badge badge-sale">SALE</span>
+        <button class="btn-close-modal" data-bs-dismiss="modal"><i class="bi bi-x-lg"></i></button>
+      </div>
+      <div class="modal-body">
+        <div class="db-modal-cat">Non-Coffee</div>
+        <div class="db-modal-name">Matchaberry</div>
+        <div class="db-modal-stars">★★★★★ <span class="rev">(88 reviews)</span></div>
+        <p class="db-modal-desc">Earthy matcha layered over strawberry milk for a vibrant, balanced mix.</p>
+        <div class="db-modal-label">Choose your size</div>
+        <div class="size-options">
+          <div class="size-option"><input type="radio" name="size-19" id="sz-19-s" checked><label for="sz-19-s"><span class="sz-cup">🥤</span><span class="sz-name">TALL</span><span class="sz-ml">Small · 12oz</span><span class="sz-price">₱52</span></label></div>
+          <div class="size-option"><input type="radio" name="size-19" id="sz-19-m"><label for="sz-19-m"><span class="sz-cup">🧋</span><span class="sz-name">VENTI</span><span class="sz-ml">Medium · 16oz</span><span class="sz-price">₱72</span></label></div>
+          <div class="size-option"><input type="radio" name="size-19" id="sz-19-l"><label for="sz-19-l"><span class="sz-cup">🫙</span><span class="sz-name">GRANDE</span><span class="sz-ml">Large · 22oz</span><span class="sz-price">₱92</span></label></div>
+        </div>
+      </div>
+      <div class="modal-footer"><button class="db-modal-add-btn" data-bs-dismiss="modal"><i class="bi bi-check-lg"></i> Confirm Order</button></div>
+    </div>
+  </div>
+</div>
+<!-- Modal 20 -->
+<div class="modal fade db-modal" id="modal-20" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header" style="background:linear-gradientv(135deg,#c71556 0%,#966d2c 100%);">
+        <div class="db-modal-thumb"><span class="thumb-emoji"><img src="/img/logo/Chocoberry.png" alt="Chocoberry" class="db-modal-img"></span><span class="thumb-label">Chocoberry</span></div>
+        <span class="db-modal-badge badge-sale">SALE</span>
+        <button class="btn-close-modal" data-bs-dismiss="modal"><i class="bi bi-x-lg"></i></button>
+      </div>
+      <div class="modal-body">
+        <div class="db-modal-cat">Non-Coffee</div>
+        <div class="db-modal-name">Chocoberry</div>
+        <div class="db-modal-stars">★★★★★ <span class="rev">(67 reviews)</span></div>
+        <p class="db-modal-desc">Smooth chocolate layered over strawberry milk for a rich, dessert-like fusion.</p>
+        <div class="db-modal-label">Choose your size</div>
+        <div class="size-options">
+          <div class="size-option"><input type="radio" name="size-20" id="sz-20-s" checked><label for="sz-20-s"><span class="sz-cup">🥤</span><span class="sz-name">TALL</span><span class="sz-ml">Small · 12oz</span><span class="sz-price">₱52</span></label></div>
+          <div class="size-option"><input type="radio" name="size-20" id="sz-20-m"><label for="sz-20-m"><span class="sz-cup">🧋</span><span class="sz-name">VENTI</span><span class="sz-ml">Medium · 16oz</span><span class="sz-price">₱72</span></label></div>
+          <div class="size-option"><input type="radio" name="size-20" id="sz-20-l"><label for="sz-20-l"><span class="sz-cup">🫙</span><span class="sz-name">GRANDE</span><span class="sz-ml">Large · 22oz</span><span class="sz-price">₱92</span></label></div>
+        </div>
+      </div>
+      <div class="modal-footer"><button class="db-modal-add-btn" data-bs-dismiss="modal"><i class="bi bi-check-lg"></i> Confirm Order</button></div>
+    </div>
+  </div>
+</div>
+<!-- Modal 21 -->
+<div class="modal fade db-modal" id="modal-21" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header" style="background:linear-gradient(135deg,#b89254 0%,#8f6424 100%);">
+        <div class="db-modal-thumb"><span class="thumb-emoji"><img src="/img/logo/Milkberry.png" alt="Milkberry" class="db-modal-img"></span><span class="thumb-label">Milkberry</span></div>
+        <span class="db-modal-badge badge-sale">SALE</span>
+        <button class="btn-close-modal" data-bs-dismiss="modal"><i class="bi bi-x-lg"></i></button>
+      </div>
+      <div class="modal-body">
+        <div class="db-modal-cat">Non-Coffee</div>
+        <div class="db-modal-name">Milkberry</div>
+        <div class="db-modal-stars">★★★★★ <span class="rev">(67 reviews)</span></div>
+        <p class="db-modal-desc">Velvety Nutella and milk swirled together, topped with whipped cream and hazelnuts.</p>
+        <div class="db-modal-label">Choose your size</div>
+        <div class="size-options">
+          <div class="size-option"><input type="radio" name="size-20" id="sz-20-s" checked><label for="sz-20-s"><span class="sz-cup">🥤</span><span class="sz-name">TALL</span><span class="sz-ml">Small · 12oz</span><span class="sz-price">₱44</span></label></div>
+          <div class="size-option"><input type="radio" name="size-20" id="sz-20-m"><label for="sz-20-m"><span class="sz-cup">🧋</span><span class="sz-name">VENTI</span><span class="sz-ml">Medium · 16oz</span><span class="sz-price">₱64</span></label></div>
+          <div class="size-option"><input type="radio" name="size-20" id="sz-20-l"><label for="sz-20-l"><span class="sz-cup">🫙</span><span class="sz-name">GRANDE</span><span class="sz-ml">Large · 22oz</span><span class="sz-price">₱84</span></label></div>
+        </div>
+      </div>
+      <div class="modal-footer"><button class="db-modal-add-btn" data-bs-dismiss="modal"><i class="bi bi-check-lg"></i> Confirm Order</button></div>
+    </div>
+  </div>
+</div>
+<!-- Modal 22 -->
+<div class="modal fade db-modal" id="modal-22" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header" style="background:linear-gradient(135deg,#a7f1ad 0%,#41e91b 100%);">
+        <div class="db-modal-thumb"><span class="thumb-emoji"><img src="/img/logo/Apple Soda.png" alt="Apple Soda" class="db-modal-img"></span><span class="thumb-label">Apple Soda</span></div>
+        <span class="db-modal-badge badge-limited">Bestseller</span>
+        <button class="btn-close-modal" data-bs-dismiss="modal"><i class="bi bi-x-lg"></i></button>
+      </div>
+      <div class="modal-body">
+        <div class="db-modal-cat">Fruit Soda</div>
+        <div class="db-modal-name">Apple Soda</div>
+        <div class="db-modal-stars">★★★★★ <span class="rev">(67 reviews)</span></div>
+        <p class="db-modal-desc">Crisp and tangy green apple soda with a bright base fading into clear Sprite fizz.</p>
+        <div class="db-modal-label">Choose your size</div>
+        <div class="size-options">
+          <div class="size-option"><input type="radio" name="size-20" id="sz-20-s" checked><label for="sz-20-s"><span class="sz-cup">🥤</span><span class="sz-name">TALL</span><span class="sz-ml">Small · 12oz</span><span class="sz-price">₱49</span></label></div>
+          <div class="size-option"><input type="radio" name="size-20" id="sz-20-m"><label for="sz-20-m"><span class="sz-cup">🧋</span><span class="sz-name">VENTI</span><span class="sz-ml">Medium · 16oz</span><span class="sz-price">₱69</span></label></div>
+          <div class="size-option"><input type="radio" name="size-20" id="sz-20-l"><label for="sz-20-l"><span class="sz-cup">🫙</span><span class="sz-name">GRANDE</span><span class="sz-ml">Large · 22oz</span><span class="sz-price">₱89</span></label></div>
+        </div>
+      </div>
+      <div class="modal-footer"><button class="db-modal-add-btn" data-bs-dismiss="modal"><i class="bi bi-check-lg"></i> Confirm Order</button></div>
+    </div>
+  </div>
+</div>
+<!-- Modal 23 -->
+<div class="modal fade db-modal" id="modal-23" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header" style="background:linear-gradient(135deg,#acc0f2 0%,#155ac8 100%);">
+        <div class="db-modal-thumb"><span class="thumb-emoji"><img src="/img/logo/Blueberry Soda.png" alt="Blueberry Soda" class="db-modal-img"></span><span class="thumb-label">Blueberry Soda</span></div>
+        <button class="btn-close-modal" data-bs-dismiss="modal"><i class="bi bi-x-lg"></i></button>
+      </div>
+      <div class="modal-body">
+        <div class="db-modal-cat">Fruit Soda</div>
+        <div class="db-modal-name">Blueberry Soda</div>
+        <div class="db-modal-stars">★★★★★ <span class="rev">(67 reviews)</span></div>
+        <p class="db-modal-desc">Deep blueberry flavor with a smooth gradient to clear soda, refreshing and sweet.</p>
+        <div class="db-modal-label">Choose your size</div>
+        <div class="size-options">
+          <div class="size-option"><input type="radio" name="size-20" id="sz-20-s" checked><label for="sz-20-s"><span class="sz-cup">🥤</span><span class="sz-name">TALL</span><span class="sz-ml">Small · 12oz</span><span class="sz-price">₱49</span></label></div>
+          <div class="size-option"><input type="radio" name="size-20" id="sz-20-m"><label for="sz-20-m"><span class="sz-cup">🧋</span><span class="sz-name">VENTI</span><span class="sz-ml">Medium · 16oz</span><span class="sz-price">₱69</span></label></div>
+          <div class="size-option"><input type="radio" name="size-20" id="sz-20-l"><label for="sz-20-l"><span class="sz-cup">🫙</span><span class="sz-name">GRANDE</span><span class="sz-ml">Large · 22oz</span><span class="sz-price">₱89</span></label></div>
+        </div>
+      </div>
+      <div class="modal-footer"><button class="db-modal-add-btn" data-bs-dismiss="modal"><i class="bi bi-check-lg"></i> Confirm Order</button></div>
+    </div>
+  </div>
+</div>
+<!-- Modal 24 -->
+<div class="modal fade db-modal" id="modal-24" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header" style="background:linear-gradient(135deg,#e39b9b 0%,#d45332 100%);">
+        <div class="db-modal-thumb"><span class="thumb-emoji"><img src="/img/logo/Strawberry Soda.png" alt="Strawberry Soda" class="db-modal-img"></span><span class="thumb-label">Strawberry Soda</span></div>
+        <span class="db-modal-badge badge-hot">HOT</span>
+        <button class="btn-close-modal" data-bs-dismiss="modal"><i class="bi bi-x-lg"></i></button>
+      </div>
+      <div class="modal-body">
+        <div class="db-modal-cat">Fruit Soda</div>
+        <div class="db-modal-name">Strawberry Soda</div>
+        <div class="db-modal-stars">★★★★★ <span class="rev">(67 reviews)</span></div>
+        <p class="db-modal-desc">Juicy strawberry soda with a vibrant pink base that lightens upward into sparkling clarity.</p>
+        <div class="db-modal-label">Choose your size</div>
+        <div class="size-options">
+          <div class="size-option"><input type="radio" name="size-20" id="sz-20-s" checked><label for="sz-20-s"><span class="sz-cup">🥤</span><span class="sz-name">TALL</span><span class="sz-ml">Small · 12oz</span><span class="sz-price">₱49</span></label></div>
+          <div class="size-option"><input type="radio" name="size-20" id="sz-20-m"><label for="sz-20-m"><span class="sz-cup">🧋</span><span class="sz-name">VENTI</span><span class="sz-ml">Medium · 16oz</span><span class="sz-price">₱69</span></label></div>
+          <div class="size-option"><input type="radio" name="size-20" id="sz-20-l"><label for="sz-20-l"><span class="sz-cup">🫙</span><span class="sz-name">GRANDE</span><span class="sz-ml">Large · 22oz</span><span class="sz-price">₱89</span></label></div>
+        </div>
+      </div>
+      <div class="modal-footer"><button class="db-modal-add-btn" data-bs-dismiss="modal"><i class="bi bi-check-lg"></i> Confirm Order</button></div>
+    </div>
+  </div>
+</div>
+<!-- Modal 25 -->
+<div class="modal fade db-modal" id="modal-25" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header" style="background:linear-gradient(135deg,#f5e6c8 0%,#d4a857 100%);">
+        <div class="db-modal-thumb"><span class="thumb-emoji"><img src="/img/logo/Classic_Burger-removebg-preview.png" alt="Classic Burger" class="db-modal-img"></span><span class="thumb-label">Classic Burger</span></div>
+        <button class="btn-close-modal" data-bs-dismiss="modal"><i class="bi bi-x-lg"></i></button>
+      </div>
+      <div class="modal-body">
+        <div class="db-modal-cat">Food</div>
+        <div class="db-modal-name">Classic Burger</div>
+        <div class="db-modal-stars">★★★★★ <span class="rev">(67 reviews)</span></div>
+        <p class="db-modal-desc">A timeless favorite featuring a juicy grilled beef patty, melted cheddar, crisp lettuce, ripe tomato, and pickles between toasted sesame buns — simple, hearty, and satisfying.</p>
+        <div class="db-food-confirm">
+          <div class="db-food-confirm-text">1 × Classic Burger<br><small>Served hot, made to order.</small></div>
+          <div class="db-food-confirm-price">₱99</div>
+        </div>
+      </div>
+      <div class="modal-footer"><button class="db-modal-add-btn" data-bs-dismiss="modal"><i class="bi bi-check-lg"></i> Confirm Order</button></div>
+    </div>
+  </div>
+</div>
+<!-- Modal 26 -->
+<div class="modal fade db-modal" id="modal-26" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header" style="background:linear-gradient(135deg,#f5d8c0 0%,#c8763a 100%);">
+        <div class="db-modal-thumb"><span class="thumb-emoji"><img src="/img/logo/Bacon_Burger-removebg-preview.png" alt="Bacon Burger" class="db-modal-img"></span><span class="thumb-label">Bacon Burger</span></div>
+        <button class="btn-close-modal" data-bs-dismiss="modal"><i class="bi bi-x-lg"></i></button>
+      </div>
+      <div class="modal-body">
+        <div class="db-modal-cat">Food </div>
+        <div class="db-modal-name">Bacon Burger</div>
+        <div class="db-modal-stars">★★★★★ <span class="rev">(67 reviews)</span></div>
+        <p class="db-modal-desc">Smoky and rich, layered with crispy bacon, melted cheddar, fresh vegetables, and a char-grilled patty — a perfect balance of savory crunch and creamy melt.</p>
+        <div class="db-food-confirm">
+          <div class="db-food-confirm-text">1 × Bacon Burger<br><small>Served hot, made to order.</small></div>
+          <div class="db-food-confirm-price">₱129</div>
+        </div>
+      </div>
+      <div class="modal-footer"><button class="db-modal-add-btn" data-bs-dismiss="modal"><i class="bi bi-check-lg"></i> Confirm Order</button></div>
+    </div>
+  </div>
+</div>
+<!-- Modal 27 -->
+<div class="modal fade db-modal" id="modal-27" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header" style="background:linear-gradient(135deg,#a58965 0%,#915e23 100%);">
+        <div class="db-modal-thumb"><span class="thumb-emoji"><img src="/img/logo/Overload_Burger-removebg-preview.png" alt="Overload Burger" class="db-modal-img"></span><span class="thumb-label">Overload Burger</span></div>
+        <span class="db-modal-badge badge-hot">HOT</span>
+        <button class="btn-close-modal" data-bs-dismiss="modal"><i class="bi bi-x-lg"></i></button>
+      </div>
+      <div class="modal-body">
+        <div class="db-modal-cat">Food </div>
+        <div class="db-modal-name">Overload Burger</div>
+        <div class="db-modal-stars">★★★★★ <span class="rev">(67 reviews)</span></div>
+        <p class="db-modal-desc">A bold double-stack of beef, bacon, and cheddar, towering with flavor and texture — indulgent, juicy, and made for those who crave the ultimate bite.</p>
+        <div class="db-food-confirm">
+          <div class="db-food-confirm-text">1 × Overload Burger<br><small>Served hot, made to order.</small></div>
+          <div class="db-food-confirm-price">₱149</div>
+        </div>
+      </div>
+      <div class="modal-footer"><button class="db-modal-add-btn" data-bs-dismiss="modal"><i class="bi bi-check-lg"></i> Confirm Order</button></div>
+    </div>
+  </div>
+</div><!-- Modal 28 -->
+<div class="modal fade db-modal" id="modal-28" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header" style="background:linear-gradient(135deg,#f0d4a8 0%,#c8a040 100%);">
+        <div class="db-modal-thumb"><span class="thumb-emoji"><img src="/img/logo/Beef_and_Mushroom-removebg-preview.png" alt="Beef and Mushroom Burger" class="db-modal-img"></span><span class="thumb-label">Beef and Mushroom Burger</span></div>
+        <span class="prod-badge badge-sale">SALE</span>
+        <button class="btn-close-modal" data-bs-dismiss="modal"><i class="bi bi-x-lg"></i></button>
+      </div>
+      <div class="modal-body">
+        <div class="db-modal-cat">Food </div>
+        <div class="db-modal-name">Beef and Mushroom Burger</div>
+        <div class="db-modal-stars">★★★★★ <span class="rev">(67 reviews)</span></div>
+        <p class="db-modal-desc">A hearty blend of seasoned beef, sautéed mushrooms, and caramelized onions over bubbly mozzarella — rich, earthy, and perfectly balanced.</p>
+        <div class="db-food-confirm">
+          <div class="db-food-confirm-text">1 × Beef and Mushroom Burger<br><small>Served hot, made to order.</small></div>
+          <div class="db-food-confirm-price">₱207 <span class="prod-price-orig">₱225</span><span class="prod-price-save">Save 8%</span></div>
+        </div>
+      </div>
+      <div class="modal-footer"><button class="db-modal-add-btn" data-bs-dismiss="modal"><i class="bi bi-check-lg"></i> Confirm Order</button></div>
+    </div>
+  </div>
+</div>
+<!-- Modal 29 -->
+<div class="modal fade db-modal" id="modal-29" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header" style="background:linear-gradient(135deg,#f0d4a8 0%,#c8a040 100%);">
+        <div class="db-modal-thumb"><span class="thumb-emoji"><img src="/img/logo/Hawaiian_Pizza-removebg-preview.png" alt="Hawaiian Pizza" class="db-modal-img"></span><span class="thumb-label">Hawaiian Pizza</span></div>
+        <span class="db-modal-badge badge-sale">SALE</span>
+        <button class="btn-close-modal" data-bs-dismiss="modal"><i class="bi bi-x-lg"></i></button>
+      </div>
+      <div class="modal-body">
+        <div class="db-modal-cat">Food </div>
+        <div class="db-modal-name">Hawaiian Pizza</div>
+        <div class="db-modal-stars">★★★★★ <span class="rev">(67 reviews)</span></div>
+        <p class="db-modal-desc">A tropical favorite with sweet pineapple chunks, savory ham, and golden mozzarella on a crisp crust — bright, juicy, and comforting.</p>
+        <div class="db-food-confirm">
+          <div class="db-food-confirm-text">1 × Hawaiian Pizza<br><small>Served hot, made to order.</small></div>
+          <div class="prod-price">₱207 <span class="prod-price-orig">₱225</span> <span class="prod-price-save">Save 8%</span></div>
+        </div>
+      </div>
+      <div class="modal-footer"><button class="db-modal-add-btn" data-bs-dismiss="modal"><i class="bi bi-check-lg"></i> Confirm Order</button></div>
+    </div>
+  </div>
+</div>
+<!-- Modal 30 -->
+<div class="modal fade db-modal" id="modal-30" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header" style="background:linear-gradient(135deg,#f0d4a8 0%,#c8a040 100%);">
+        <div class="db-modal-thumb"><span class="thumb-emoji"><img src="/img/logo/Pepperoni_Pizza-removebg-preview.png" alt="Pepperoni Pizza" class="db-modal-img"></span><span class="thumb-label">Pepperoni Pizza</span></div>
+        <span class="db-modal-badge badge-sale">SALE</span>
+        <button class="btn-close-modal" data-bs-dismiss="modal"><i class="bi bi-x-lg"></i></button>
+      </div>
+      <div class="modal-body">
+        <div class="db-modal-cat">Food </div>
+        <div class="db-modal-name">Pepperoni Pizza</div>
+        <div class="db-modal-stars">★★★★★ <span class="rev">(67 reviews)</span></div>
+        <p class="db-modal-desc">A timeless classic topped with zesty tomato sauce, melted mozzarella, and crispy pepperoni slices — bold, simple, and irresistibly flavorful.</p>
+        <div class="db-food-confirm">
+          <div class="db-food-confirm-text">1 × Pepperoni Pizza<br><small>Served hot, made to order.</small></div>
+          <div class="prod-price">₱194 <span class="prod-price-orig">₱210</span> <span class="prod-price-save">Save 8%</span></div>
+        </div>
+      </div>
+      <div class="modal-footer"><button class="db-modal-add-btn" data-bs-dismiss="modal"><i class="bi bi-check-lg"></i> Confirm Order</button></div>
+    </div>
+  </div>
+</div>
+
+<!-- CTA -->
+<section class="db-cta mt-5">
+  <div class="container text-center" style="position:relative;z-index:1;">
+    <h2 class="cta-title" data-aos="fade-up" data-aos-duration="800" data-aos-delay="0">Can't Decide? <em data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">Visit Us!</em></h2>
+    <p class="cta-sub" data-aos="fade-up" data-aos-duration="800" data-aos-delay="150">Walk in and our crew will help you find your perfect cup. We promise you won't leave disappointed.</p>
+    <div class="d-flex flex-wrap justify-content-center gap-3 mt-4">
+      <a href="contact.html" class="db-btn-primary d-inline-flex align-items-center gap-1 text-decoration-none" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">Find Our Location</a>
+      <a href="faq.html" class="db-btn-ghost-light d-inline-flex align-items-center gap-1 text-decoration-none" data-aos="fade-up" data-aos-duration="800" data-aos-delay="250">Read the FAQ</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="db-footer">
+  <div class="container">
+    <div class="row g-5">
+      <div class="col-12 col-md-4">
+        <div class="footer-brand">DayBreak <em>Corner</em></div>
+        <p class="footer-tagline mt-2">Beyond the Bean — your daily dose of happiness, one cup at a time.</p>
+        <div class="footer-socials mt-3 d-flex gap-2">
+          <a href="https://www.facebook.com/profile.php?id=61559224423326&sk=about"><i class="bi bi-facebook"></i></a>
+          <a href="#"><i class="bi bi-instagram"></i></a>
+          <a href="#"><i class="bi bi-tiktok"></i></a>
+        </div>
+      </div>
+      <div class="col-6 col-md-2">
+        <h6 class="footer-heading">Navigate</h6>
+        <ul class="footer-links p-0 m-0 d-flex flex-column gap-2 list-unstyled">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="product.html">Menu</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md-2">
+        <h6 class="footer-heading">Help</h6>
+        <ul class="footer-links p-0 m-0 d-flex flex-column gap-2 list-unstyled">
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="faq.html#faqDelivery">Delivery</a></li>
+            <li><a href="faq.html#faqReturns">Returns</a></li>
+            <li><a href="faq.html#faqOrders">Track Order</a></li>
+        </ul>
+      </div>
+      <div class="col-12 col-md-4">
+        <h6 class="footer-heading">Stay Updated</h6>
+        <p class="footer-tagline mb-3">New flavors and promos, straight to you.</p>
+        <div class="footer-newsletter d-flex">
+          <input type="email" placeholder="your@email.com" />
+          <button>Subscribe</button>
+        </div>
+        <div class="footer-hours d-flex align-items-center gap-1 mt-3">
+          <i class="bi bi-clock me-1"></i>
+          <span>Sun - Sat: 9:00 AM – 3:00 AM</span>
+        </div>
+      </div>
+    </div>
+    <hr class="footer-divider" />
+    <div class="footer-bottom d-flex justify-content-between align-items-center flex-wrap gap-3">
+      <small>© 2026 DayBreak Corner. All rights reserved.</small>
+      <div class="d-flex gap-3">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DayBreak Corner</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="/img/logo/logo-img.png" type="image/x-icon">
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <!-- Site styles -->
+  <link rel="stylesheet" href="style.css" />
+  <!-- AOS Animation -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+  
+</head>
+
+<body>
+
+  <!-- SCRIPTS -->
+  <script src="script.js"></script>
+  <!-- Bootstrap JS (offcanvas + accordion only) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- AOS Animation -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+
+<!-- NAVBAR -->
+<header class="db-nav sticky-top" id="mainNav">
+  <div class="container-fluid px-4">
+    <div class="d-flex align-items-center justify-content-between">
+
+      <!-- Brand -->
+      <a href="home.html" class="db-brand d-flex align-items-center gap-2 text-decoration-none">
+        <img src="/img/logo/logo-img.png" alt="DayBreak Corner" width="44" height="44" class="db-brand-img" />
+        <span>DayBreak <em>Corner</em></span>
+      </a>
+
+      <!-- Desktop nav links -->
+      <nav class="db-navlinks d-none d-md-flex d-flex align-items-center gap-1">
+        <a href="home.html" class="active">Home</a>
+        <a href="product.html">Menu</a>
+        <a href="about.html">About</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <!-- Desktop CTA -->
+      <div class="d-none d-md-flex align-items-center gap-3">
+        <a href="product.html" class="db-btn-primary d-inline-flex align-items-center gap-1 text-decoration-none">Order Now</a>
+      </div>
+
+      <!-- Mobile menu button -->
+      <button class="db-hamburger d-md-none" type="button"
+        data-bs-toggle="offcanvas" data-bs-target="#mobileMenu" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- MOBILE OFFCANVAS --> 
+<div class="offcanvas offcanvas-end db-offcanvas" tabindex="-1" id="mobileMenu">
+  <div class="offcanvas-header">
+    <span class="db-brand d-flex align-items-center gap-2 text-decoration-none" style="font-size:1.1rem;">DayBreak <em>Corner</em></span>
+    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body d-flex flex-column">
+    <nav class="db-offcanvas-links flex-grow-1 d-flex flex-column">
+      <a href="home.html" class="active">Home</a>
+      <a href="product.html">Menu</a>
+      <a href="about.html">About</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <a href="product.html" class="db-btn-primary text-center mt-3 d-inline-flex align-items-center gap-1 text-decoration-none">Order Now</a>
+  </div>
+</div>
+
+<!-- HERO -->
+<section class="db-hero">
+  <div class="container">
+    <div class="row align-items-center min-vh-80 gy-5">
+      <div class="col-12 col-lg-6" data-aos="fade-up" data-aos-duration="1000">
+        <p class="hero-eyebrow" data-aos="fade-up" data-aos-duration="1000">Beyond the Bean</p>
+        <h1 class="hero-headline" data-aos="fade-up" data-aos-duration="1500">Your Daily Dose<br>of <em>Happiness</em></h1>
+        <p class="hero-sub" data-aos="fade-up" data-aos-duration="1800">Velvety milk teas, aromatic coffees, creamy drinks, fruity sodas, and hearty bites — crafted to make every day break brighter at DayBreak Corner.</p>
+        <div class="d-flex flex-wrap gap-3 mt-4" data-aos="fade-up" data-aos-duration="2000">
+          <a href="product.html" class="db-btn-primary d-inline-flex align-items-center gap-1 text-decoration-none">Explore Our Menu</a>
+          <a href="about.html" class="db-btn-ghost d-inline-flex align-items-center gap-1 text-decoration-none">Our Story</a>
+        </div>
+        <!-- Quick stats -->
+        <div class="hero-stats mt-5 d-flex align-items-center gap-4" data-aos="fade-up" data-aos-duration="2000">
+          <div class="hero-stat d-flex flex-column">
+            <span class="stat-num">20+</span>
+            <span class="stat-label">Drinks</span>
+          </div>
+          <div class="hero-stat-divider"></div>
+          <div class="hero-stat d-flex flex-column">
+            <span class="stat-num">500+</span>
+            <span class="stat-label">Happy Customers</span>
+          </div>
+          <div class="hero-stat-divider"></div>
+          <div class="hero-stat d-flex flex-column">
+            <span class="stat-num">4.9★</span>
+            <span class="stat-label">Average Rating</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-6 text-center d-none d-lg-block" data-aos="fade-up" data-aos-duration="2000">
+        <div class="hero-img-frame">
+          <img src="/img/logo/heropic.png" alt="DayBreak Corner drinks" class="hero-img "/>
+          <div class="hero-float hero-float-1">🧋 Hershey's Boba</div>
+          <div class="hero-float hero-float-2">☕ House Blend</div>
+          <div class="hero-float hero-float-3">⭐ Bestseller</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Decorative wave -->
+  <div class="hero-wave">
+    <svg viewBox="0 0 1440 80" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+      <path d="M0 40 C360 80 1080 0 1440 40 L1440 80 L0 80 Z" fill="#fff"/>
+    </svg>
+  </div>
+</section>
+
+<!-- FEATURE SECTIONS -->
+<section class="db-features">
+  <div class="container">
+
+    <!-- Feature 1 -->
+    <div class="row align-items-center gy-5 mb-5 pb-5">
+      <div class="col-12 col-md-6" data-aos="fade-right" data-aos-duration="1500">
+        <div class="feature-img-wrap">
+          <img src="/img/logo/heropic(2).png" alt="Our drinks" class="feature-img" />
+          <div class="feature-badge feature-badge-amber">Made Fresh Daily</div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 ps-md-5">
+        <span class="section-eyebrow d-block text-uppercase fw-bold mb-2" data-aos="fade-up" data-aos-duration="1000">The DayBreak Difference</span>
+        <h2 class="section-title" data-aos="fade-up" data-aos-duration="1200">Brewed with Care,<br><em>Served with Love</em></h2>
+        <p class="section-body" data-aos="fade-up" data-aos-duration="1400">Every cup that leaves our counter starts from scratch — hand-selected tea leaves, real fruit, and pearls cooked low and slow until they reach that perfect chew. No shortcuts. No syrups from a bottle. Just honest craft in every sip.</p>
+        <ul class="feature-list d-flex flex-column gap-2 list-unstyled mt-3">
+          <li class="d-flex align-items-center gap-2"><i class="bi bi-check-circle-fill" data-aos="fade-up" data-aos-duration="1600"></i> <p data-aos="fade-up" data-aos-duration="1600">Premium loose-leaf teas sourced directly</p> </li>
+          <li class="d-flex align-items-center gap-2"><i class="bi bi-check-circle-fill" data-aos="fade-up" data-aos-duration="1700"></i> <p data-aos="fade-up" data-aos-duration="1700">Brown sugar pearls cooked fresh every morning</p> </li>
+          <li class="d-flex align-items-center gap-2"><i class="bi bi-check-circle-fill" data-aos="fade-up" data-aos-duration="1800"></i> <p data-aos="fade-up" data-aos-duration="1800">Customizable sweetness & ice levels</p> </li>
+        </ul>
+        <a href="about.html" class="db-link d-inline-flex align-items-center mt-3 text-decoration-none" data-aos="fade-up" data-aos-duration="1900">Learn our story <i class="bi bi-arrow-right ms-1"></i></a>
+      </div>
+    </div>
+
+    <!-- Feature 2 -->
+    <div class="row align-items-center gy-5">
+      <div class="col-12 col-md-6 order-2 order-md-1 pe-md-5">
+        <span class="section-eyebrow d-block text-uppercase fw-bold mb-2" data-aos="fade-up" data-aos-duration="1000">More Than Milk Tea</span>
+        <h2 class="section-title" data-aos="fade-up" data-aos-duration="1200">Coffee, Bites,<br><em>& Everything Nice</em></h2>
+        <p class="section-body" data-aos="fade-up" data-aos-duration="1400">Beyond our signature milk teas, discover a full menu of house-blend coffees and drinks, refreshing fruit sodas, and a rotating selection of snacks. Whether you need a morning pick-me-up or an afternoon chill, we've got your order.</p>
+        <div class="feature-pills d-flex flex-wrap gap-2 mt-3">
+          <span data-aos="fade-up" data-aos-duration="1600">Milk Tea</span>
+          <span data-aos="fade-up" data-aos-duration="1700">Coffee</span>
+          <span data-aos="fade-up" data-aos-duration="1800">Non-Coffee Drinks</span>
+          <span data-aos="fade-up" data-aos-duration="1900">Fruit Soda</span>
+          <span data-aos="fade-up" data-aos-duration="2000">Foods</span>
+        </div>
+        <a href="product.html" class="db-btn-primary d-inline-flex align-items-center gap-1 text-decoration-none mt-4" data-aos="fade-up" data-aos-duration="2100">View Full Menu</a>
+      </div>
+      <div class="col-12 col-md-6 order-1 order-md-2">
+        <div class="feature-img-wrap feature-img-wrap-right shadow-lg" data-aos="fade-left" data-aos-duration="1500">
+          <img src="/img/logo/drinks&foods.png" alt="Menu variety" class="feature-img" />
+          <div class="feature-badge feature-badge-dark">20+ Items</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- BEST SELLERS -->
+<section class="db-bestsellers">
+  <div class="container">
+    <div class="text-center mb-5">
+      <span class="section-eyebrow d-block text-uppercase fw-bold mb-2" data-aos="fade-up" data-aos-duration="1000">Our Menu</span>
+      <h2 class="section-title" data-aos="fade-up" data-aos-duration="1200">Customer Favorites</h2>
+      <p class="section-body mx-auto" style="max-width:520px;" data-aos="fade-up" data-aos-duration="1600">The drinks our regulars keep coming back for — try one for yourself and see what the hype is about.</p>
+    </div>
+
+    <!-- Desktop grid -->
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4 justify-content-center d-none d-md-flex">
+      <!-- Card 1 -->
+      <div class="col" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+        <div class="db-card">
+          <div class="db-card-img-wrap">
+            <img src="/img/logo/Hershey_s milk tea.png" alt="Hershey's Boba" />
+            <span class="db-badge db-badge-amber">BESTSELLER</span>
+          </div>
+          <div class="db-card-body">
+            <span class="db-card-cat">Classic Milk Tea</span>
+            <h6 class="db-card-name">Hershey's Boba</h6>
+            <div class="db-stars">★★★★★ <span>(312)</span></div>
+            <div class="db-card-price">₱49</div>
+            <a href="product.html" class="db-card-btn d-block text-center text-decoration-none">Order Now</a>
+          </div>
+        </div>
+      </div>
+      <!-- Card 2 -->
+      <div class="col" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
+        <div class="db-card">
+          <div class="db-card-img-wrap">
+            <img src="/img/logo/Nutella Loco.png" alt="Nutella Loco" />
+            <span class="db-badge db-badge-dark">FAN FAVE</span>
+          </div>
+          <div class="db-card-body">
+            <span class="db-card-cat">Non-Coffee</span>
+            <h6 class="db-card-name">Nutella Loco</h6>
+            <div class="db-stars">★★★★★ <span>(321)</span></div>
+            <div class="db-card-price">₱69</div>
+            <a href="product.html" class="db-card-btn d-block text-center text-decoration-none">Order Now</a>
+          </div>
+        </div>
+      </div>
+      <!-- Card 3 -->
+      <div class="col" data-aos="fade-up" data-aos-duration="800" data-aos-delay="600">
+        <div class="db-card">
+          <div class="db-card-img-wrap">
+            <img src="/img/logo/Mocha Latte.png" alt="Mocha Latte" />
+            <span class="db-badge db-badge-amber">BESTSELLER</span>
+          </div>
+          <div class="db-card-body">
+            <span class="db-card-cat">Coffee</span>
+            <h6 class="db-card-name">Mocha Latte</h6>
+            <div class="db-stars">★★★★<span style="opacity:.3">★</span> <span>(204)</span></div>
+            <div class="db-card-price">₱59</div>
+            <a href="product.html" class="db-card-btn d-block text-center text-decoration-none">Order Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile carousel -->
+    <div id="bestsellersCarouselMobile" class="carousel carousel-dark d-flex w-100 slide d-block d-md-none" data-bs-ride="carousel">
+      <div class="carousel-inner px-4">
+        <div class="carousel-item active">
+          <div class="db-card mx-auto" style="max-width:310px;">
+            <div class="db-card-img-wrap">
+              <img src="/img/logo/Hershey's milk tea.png" alt="Hershey's Boba" />
+              <span class="db-badge db-badge-amber">BESTSELLER</span>
+            </div>
+            <div class="db-card-body">
+              <span class="db-card-cat">Classic Milk Tea</span>
+              <h6 class="db-card-name">Hershey's Boba</h6>
+              <div class="db-stars">★★★★★ <span>(312)</span></div>
+              <div class="db-card-price">₱49</div>
+              <a href="product.html" class="db-card-btn d-block text-center text-decoration-none">Order Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="db-card mx-auto" style="max-width:310px;">
+            <div class="db-card-img-wrap">
+              <img src="/img/logo/Nutella Loco.png" alt="Nutella Loco" />
+              <span class="db-badge db-badge-dark">FAN FAVE</span>
+            </div>
+            <div class="db-card-body">
+              <span class="db-card-cat">Non-Coffee</span>
+              <h6 class="db-card-name">Nutella Loco</h6>
+              <div class="db-stars">★★★★★ <span>(321)</span></div>
+              <div class="db-card-price">₱59</div>
+              <a href="product.html" class="db-card-btn d-block text-center text-decoration-none">Order Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="db-card mx-auto" style="max-width:310px;">
+            <div class="db-card-img-wrap">
+              <img src="/img/logo/Mocha Latte.png" alt="Mocha Latte" />
+              <span class="db-badge db-badge-amber">BESTSELLER</span>
+            </div>
+            <div class="db-card-body">
+              <span class="db-card-cat">Coffee</span>
+              <h6 class="db-card-name">Mocha Latte</h6>
+              <div class="db-stars">★★★★<span style="opacity:.3">★</span> <span>(204)</span></div>
+              <div class="db-card-price">₱69</div>
+              <a href="product.html" class="db-card-btn d-block text-center text-decoration-none">Order Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#bestsellersCarouselMobile" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#bestsellersCarouselMobile" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      </button>
+    </div>
+
+    <div class="text-center mt-5">
+      <a href="product.html" class="db-btn-ghost d-inline-flex align-items-center gap-1 text-decoration-none">See the Full Menu <i class="bi bi-arrow-right ms-1"></i></a>
+    </div>
+  </div>
+</section>
+
+<!-- SPONSORS -->
+<section class="sponsor-section">
+  <div class="">
+    <div class="db-sponsor">
+      <div class="hero-wave">
+        <svg viewBox="0 0 1440 80" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+          <path d="M0 40 C360 80 1080 0 1440 40 L1440 80 L0 80 Z" fill="#fff"/>
+        </svg>
+      </div>
+      <h1 class="text-center fw-bold" data-aos="fade-up" data-aos-duration="800">Our <em data-aos="fade-up" data-aos-duration="1100">Sponsors</em></h1>
+    </div>
+    <div class="carousel shadow d-flex w-100">
+      <div class="group-sponsor d-flex align-items-center justify-content-center gap-2 pe-2">
+        <div class="img-cont"><img src="/img/logo/foodpandalogo.png" alt="logo"></div>
+        <div class="img-cont"><img src="/img/logo/joyridelogo.png" alt="logo"></div>
+        <div class="img-cont"><img src="/img/logo/logo-img.png" alt="logo"></div>
+        <div class="img-cont"><img src="/img/logo/Paymaya.jpg" alt="logo"></div>
+        <div class="img-cont"><img src="/img/logo/Fresh Milk.png" alt="logo"></div>
+        <div class="img-cont"><img src="/img/logo/Gcash Logo.jpg" alt="logo"></div>
+        <div class="img-cont"><img src="/img/logo/Grab Logo.png" alt="logo"></div>
+        <div class="img-cont"><img src="/img/logo/Coffee Beans.png" alt="logo"></div>
+        <div class="img-cont"><img src="/img/logo/QBank Logo.png" alt="logo"></div>
+      </div>
+      <div aria-hidden class="group-sponsor d-flex align-items-center justify-content-center gap-2 pe-2">
+        <div class="img-cont"><img src="/img/logo/foodpandalogo.png" alt="logo"></div>
+        <div class="img-cont"><img src="/img/logo/joyridelogo.png" alt="logo"></div>
+        <div class="img-cont"><img src="/img/logo/logo-img.png" alt="logo"></div>
+        <div class="img-cont"><img src="/img/logo/Paymaya.jpg" alt="logo"></div>
+        <div class="img-cont"><img src="/img/logo/Fresh Milk.png" alt="logo"></div>
+        <div class="img-cont"><img src="/img/logo/Gcash Logo.jpg" alt="logo"></div>
+        <div class="img-cont"><img src="/img/logo/Grab Logo.png" alt="logo"></div>
+        <div class="img-cont"><img src="/img/logo/Coffee Beans.png" alt="logo"></div>
+        <div class="img-cont"><img src="/img/logo/QBank Logo.png" alt="logo"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section class="db-why">
+  <div class="container">
+    <div class="text-center pb-5">
+      <span class="section-eyebrow d-block text-uppercase fw-bold mb-2" data-aos="fade-up" data-aos-duration="800" data-aos-delay="0">Why Us</span>
+      <h2 class="section-title" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">Why Customers Love<br><em>DayBreak Corner</em></h2>
+    </div>
+    <div class="row row-cols-2 row-cols-sm-2 row-cols-lg-4 g-4">
+      <div class="col" data-aos="fade-up" data-aos-duration="800" data-aos-delay="0">
+        <div class="why-card">
+          <div class="why-icon d-block">🫖</div>
+          <h6 class="why-title">Premium Ingredients</h6>
+          <p class="why-body">Loose-leaf teas, real fruit, and freshly cooked pearls — every single day, no exceptions.</p>
+        </div>
+      </div>
+      <div class="col" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+        <div class="why-card">
+          <div class="why-icon d-block">⚡</div>
+          <h6 class="why-title">Made to Order</h6>
+          <p class="why-body">Your cup is built exactly how you want it. Sugar level, ice, size, add-ons — all yours to decide.</p>
+        </div>
+      </div>
+      <div class="col" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
+        <div class="why-card">
+          <div class="why-icon d-block">🏡</div>
+          <h6 class="why-title">Cozy Atmosphere</h6>
+          <p class="why-body">A chilly corner that feels like your favorite reading nook — relax, recharge, and sip slowly.</p>
+        </div>
+      </div>
+      <div class="col" data-aos="fade-up" data-aos-duration="800" data-aos-delay="600">
+        <div class="why-card">
+          <div class="why-icon d-block">💬</div>
+          <h6 class="why-title">Real Reviews</h6>
+          <p class="why-body">Over 500 happy customers and a 4.9-star average. Don't take our word — take theirs.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="db-testimonials ">
+  <div class="container ">
+    <div class="text-center mb-5">
+      <span class="section-eyebrow d-block text-uppercase fw-bold mb-2" data-aos="fade-up" data-aos-duration="800" data-aos-delay="0">Reviews</span>
+      <h2 class="section-title" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">What People Are Saying</h2>
+    </div>
+    <div class="row row-cols-1 row-cols-md-3 g-4 d-none d-md-flex d-sm-block">
+      <div class="col" data-aos="flip-right" data-aos-duration="800" data-aos-delay="0">
+        <div class="testimonial-card d-flex flex-column">
+          <div class="t-stars">★★★★★</div>
+          <p class="t-quote">"The hershey's boba here is unmatched. I've tried every milk tea place in the city and DayBreak Corner wins every time."</p>
+          <div class="t-author d-flex align-items-center gap-3">
+            <div class="t-avatar d-flex align-items-center justify-content-center">A</div>
+            <div><strong>Ana R.</strong><br><small>Regular customer</small></div>
+          </div>
+        </div>
+      </div>
+      <div class="col" data-aos="flip-right" data-aos-duration="800" data-aos-delay="200">
+        <div class="testimonial-card d-flex flex-column testimonial-card-accent">
+          <div class="t-stars">★★★★★</div>
+          <p class="t-quote">"Love that I can choose the size of my cup. It suits my preference"</p>
+          <div class="t-author d-flex align-items-center gap-3">
+            <div class="t-avatar t-avatar-light d-flex align-items-center justify-content-center">M</div>
+            <div><strong>Marco S.</strong><br><small>Loyal customer</small></div>
+          </div>
+        </div>
+      </div>
+      <div class="col" data-aos="flip-right" data-aos-duration="800" data-aos-delay="400">
+        <div class="testimonial-card d-flex flex-column">
+          <div class="t-stars">★★★★★</div>
+          <p class="t-quote">"The café vibe is so cozy. I come here to work and always end up staying 3 hours longer than planned. The Nutella Loco is heaven."</p>
+          <div class="t-author d-flex align-items-center gap-3">
+            <div class="t-avatar d-flex align-items-center justify-content-center">J</div>
+            <div><strong>Jasmine C.</strong><br><small>Food blogger</small></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- mobile view -->
+    <div id="TestimonialCarouselMobile" class="carousel carousel-dark d-flex w-100 slide d-block d-sm-none " data-bs-ride="carousel">
+      <div class="carousel-inner px-4">
+        <div class="carousel-item active">
+          <div class="testimonial-card d-flex flex-column">
+            <div class="t-stars">★★★★★</div>
+            <p class="t-quote">"The brown sugar boba here is unmatched. I've tried every milk tea place in the city and DayBreak Corner wins every time."</p>
+            <div class="t-author d-flex align-items-center gap-3">
+              <div class="t-avatar d-flex align-items-center justify-content-center">A</div>
+              <div><strong>Ana R.</strong><br><small>Regular customer</small></div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="testimonial-card d-flex flex-column testimonial-card-accent">
+            <div class="t-stars">★★★★★</div>
+            <p class="t-quote">"Love that I can customize everything. 50% sugar, less ice, extra pearls — and they always get it right. My daily ritual now."</p>
+            <div class="t-author d-flex align-items-center gap-3">
+              <div class="t-avatar t-avatar-light d-flex align-items-center justify-content-center">M</div>
+              <div><strong>Marco S.</strong><br><small>Loyal customer</small></div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+        <div class="testimonial-card d-flex flex-column">
+            <div class="t-stars">★★★★★</div>
+              <p class="t-quote">"The café vibe is so cozy. I come here to work and always end up staying 3 hours longer than planned. The Thai milk tea is heaven."</p>
+              <div class="t-author d-flex align-items-center gap-3">
+                <div class="t-avatar d-flex align-items-center justify-content-center">J</div>
+                <div><strong>Jasmine C.</strong><br><small>Food blogger</small></div>
+              </div>
+          </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#TestimonialCarouselMobile" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#TestimonialCarouselMobile" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      </button>
+    </div>
+</section>
+
+<!-- CTA BANNER -->
+<section class="db-cta">
+  <div class="container text-center">
+    <h2 class="cta-title" data-aos="fade-up" data-aos-duration="800" data-aos-delay="0">Ready to Make Your Day<br><em>Break Better?</em></h2>
+    <p class="cta-sub" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">Order your favorite drinks online or visit us in store. Your perfect cup is waiting.</p>
+    <div class="d-flex flex-wrap justify-content-center gap-3 mt-4">
+      <a href="product.html" class="db-btn-primary d-inline-flex align-items-center gap-1 text-decoration-none" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">Order Online</a>
+      <a href="contact.html" class="db-btn-ghost-light d-inline-flex align-items-center gap-1 text-decoration-none" data-aos="fade-up" data-aos-duration="800" data-aos-delay="250">Find Us</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="db-footer">
+  <div class="container">
+    <div class="row g-5">
+      <div class="col-12 col-md-4">
+        <div class="footer-brand">DayBreak <em>Corner</em></div>
+        <p class="footer-tagline mt-2">Beyond the Bean — your daily dose of happiness, one cup at a time.</p>
+        <div class="footer-socials d-flex gap-2 mt-3">
+          <a href="https://www.facebook.com/profile.php?id=61559224423326&sk=about"><i class="bi bi-facebook"></i></a>
+          <a href="#"><i class="bi bi-instagram"></i></a>
+          <a href="#"><i class="bi bi-tiktok"></i></a>
+        </div>
+      </div>
+      <div class="col-6 col-md-2">
+        <h6 class="footer-heading">Navigate</h6>
+        <ul class="footer-links p-0 m-0 d-flex flex-column gap-2 list-unstyled">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="product.html">Menu</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md-2">
+        <h6 class="footer-heading">Help</h6>
+        <ul class="footer-links p-0 m-0 d-flex flex-column gap-2 list-unstyled">
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="faq.html#faqDelivery">Delivery</a></li>
+            <li><a href="faq.html#faqReturns">Returns</a></li>
+            <li><a href="faq.html#faqOrders">Track Order</a></li>
+        </ul>
+      </div>
+      <div class="col-12 col-md-4">
+        <h6 class="footer-heading">Stay Updated</h6>
+        <p class="footer-tagline mb-3">New flavors and promos, straight to you.</p>
+        <div class="footer-newsletter d-flex">
+          <input type="email" placeholder="your@email.com" />
+          <button>Subscribe</button>
+        </div>
+        <div class="footer-hours d-flex align-items-center gap-1 mt-3">
+          <i class="bi bi-clock me-1"></i>
+          <span>Sun - Sat: 9:00 AM – 3:00 AM</span>
+        </div>
+      </div>
+    </div>
+    <hr class="footer-divider" />
+    <div class="footer-bottom d-flex justify-content-between align-items-center flex-wrap gap-3">
+      <small>© 2026 DayBreak Corner. All rights reserved.</small>
+      <div class="d-flex gap-3">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  
+</body>
+</html>
