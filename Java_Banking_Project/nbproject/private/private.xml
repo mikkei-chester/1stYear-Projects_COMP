@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/D:/IT_PROJECTS/COMPROG2/QBANK_ME/src/UserDashboard.java</file>
+            <file>file:/D:/IT_PROJECTS/COMPROG2/QBANK_ME/src/WalletDeposit.java</file>
+            <file>file:/D:/IT_PROJECTS/COMPROG2/QBANK_ME/src/WalletWithdraw.java</file>
+            <file>file:/D:/IT_PROJECTS/COMPROG2/QBANK_ME/src/DAO/transactionDAO.java</file>
+            <file>file:/D:/IT_PROJECTS/COMPROG2/QBANK_ME/src/WalletTransferAmount.java</file>
+            <file>file:/D:/IT_PROJECTS/COMPROG2/QBANK_ME/src/transferToSavings.java</file>
+            <file>file:/D:/IT_PROJECTS/COMPROG2/QBANK_ME/src/Main.java</file>
+            <file>file:/D:/IT_PROJECTS/COMPROG2/QBANK_ME/src/CreateUserAccount.java</file>
+            <file>file:/D:/IT_PROJECTS/COMPROG2/QBANK_ME/src/AdminDashboard.java</file>
+            <file>file:/D:/IT_PROJECTS/COMPROG2/QBANK_ME/src/DAO/userAdminDAO.java</file>
+            <file>file:/D:/IT_PROJECTS/COMPROG2/QBANK_ME/src/DAO/userDAO.java</file>
+            <file>file:/D:/IT_PROJECTS/COMPROG2/QBANK_ME/src/DBC/DatabaseConnection.java</file>
+            <file>file:/D:/IT_PROJECTS/COMPROG2/QBANK_ME/src/Objects/transaction.java</file>
+            <file>file:/D:/IT_PROJECTS/COMPROG2/QBANK_ME/src/depositFromWallet.java</file>
+        </group>
+    </open-files>
+</project-private>
